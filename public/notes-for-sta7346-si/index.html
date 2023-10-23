@@ -322,22 +322,12 @@ $$</p>
 <p>We first need to bring in the notion of <strong>Randomized Decision Rules</strong>.</p>
 <p>Suppose $\mathcal D$ is the space of all non-randomized decision rules. We extend $\mathcal D$ to $\mathcal D^\star$ where $\mathcal D^\star$ is the space of all probability distributions over $\mathcal D$.</p>
 <p>For example, suppose $\mathcal D=\{\delta_1,\delta_2,\delta_3,\delta_4\}$. A typical element of $\mathcal D^\star$ is a probability distribution $\delta^\star$ such that $\delta^\star$ assigns probability $p_i$ to $\delta_i$ $(i=1,2,3,4)$, $p_i\geq0$ and $\sum_{i=1}^4p_i=1$. In general, we shall write the risk function corresponding to $\delta^\star$ as $R(\theta,\delta^\star)=\mathbb ER(\theta,Y)$, where $Y$ is a random variable assuming values in $\mathcal D$ given by $\delta^\star$.</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/images/STA7346-Eg-randomized-decision-risk.png"
-        data-srcset="/posts/images/STA7346-Eg-randomized-decision-risk.png, /posts/images/STA7346-Eg-randomized-decision-risk.png 1.5x, /posts/images/STA7346-Eg-randomized-decision-risk.png 2x"
-        data-sizes="auto"
-        alt="/posts/images/STA7346-Eg-randomized-decision-risk.png"
-        title="Eg randomized decision risk" /></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/images/STA7346proof-S-convex.png"
-        data-srcset="/posts/images/STA7346proof-S-convex.png, /posts/images/STA7346proof-S-convex.png 1.5x, /posts/images/STA7346proof-S-convex.png 2x"
-        data-sizes="auto"
-        alt="/posts/images/STA7346proof-S-convex.png"
-        title="proof S is convex" /></p>
+<figure><img src="/images/STA7346-Eg-randomized-decision-risk.png"/>
+</figure>
+
+<figure><img src="/images/STA7346proof-S-convex.png"/>
+</figure>
+
 <p>One advantage of the Bayes procedure is that the search for good decision rules may be restricted to the class of non-randomized decision rules.</p>
 <p>More precisely, if a Bayes rule with respect to a prior distribution $\xi$ exists, there exists a non-randomized Bayes rule with respect to $\xi$. A non-rigorous proof of this is as follows.</p>
 <p><em>proof:</em> Suppose $\delta_{\xi}\in\mathcal D^\star$ is a Bayes rule with respect to a prior distribution $\xi$. Then
