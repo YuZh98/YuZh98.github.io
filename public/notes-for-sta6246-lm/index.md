@@ -2169,10 +2169,6 @@ Let's think about a special case with $K=1$, $a=3$ and $b=2$.
 
 Q: What does no interaction really mean? 
 
-|                                                              |
-| :----------------------------------------------------------: |
-| ![interactionplot](/posts/images/STA6246-interaction.jpeg) |
-
 The difference in response between levels $i$ and $i'$ of factor $A$ does not depend on factor $B$. 
 $$
 \mathbb E(y_{ij}-y_{i'j})=\mathbb E(y_{ij'}-y_{i'j'}),\quad i\not=i',j\not=j'\\\\

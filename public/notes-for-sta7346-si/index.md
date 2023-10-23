@@ -149,9 +149,9 @@ Suppose $\mathcal D$ is the space of all non-randomized decision rules. We exten
 
 For example, suppose $\mathcal D=\\{\delta_1,\delta_2,\delta_3,\delta_4\\}$. A typical element of $\mathcal D^\star$ is a probability distribution $\delta^\star$ such that $\delta^\star$ assigns probability $p_i$ to $\delta_i$ $(i=1,2,3,4)$, $p_i\geq0$ and $\sum_{i=1}^4p_i=1$. In general, we shall write the risk function corresponding to $\delta^\star$ as $R(\theta,\delta^\star)=\mathbb ER(\theta,Y)$, where $Y$ is a random variable assuming values in $\mathcal D$ given by $\delta^\star$.
 
-![Eg randomized decision risk](/posts/images/STA7346-Eg-randomized-decision-risk.png)
+{{< figure src="/images/STA7346-Eg-randomized-decision-risk.png" title="" >}}
 
-![proof S is convex](/posts/images/STA7346proof-S-convex.png)
+{{< figure src="/images/STA7346proof-S-convex.png" title="" >}}
 
 
 
