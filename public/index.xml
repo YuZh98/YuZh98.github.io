@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>My New Hugo Site</title>
+        <title>Yu Zheng&#39;s website</title>
         <link>https://zhengyu.github.io/</link>
         <description>Yu Zheng Homepage</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>seanzhengyu1@gmail.com (Yu Zheng)</managingEditor>
