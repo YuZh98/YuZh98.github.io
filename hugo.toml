@@ -4,7 +4,7 @@ baseURL = "https://zhengyu.github.io/"
 theme = "LoveIt"
 
 # website title
-title = "My New Hugo Site"
+title = "Yu Zheng's website"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"

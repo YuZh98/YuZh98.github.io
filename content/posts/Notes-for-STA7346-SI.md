@@ -31,7 +31,7 @@ The triplet $(\Theta,\mathcal A,L)$ defines what is called a **Game**, and is no
 
   Two prisoners were partners in a crime, and they were questioned in separate rooms. Each prisoner had a choice of confessing to the crime, and there by implicating the other, or denying that he had participated in the crime. If only one prisoner confessed, then he would go free, and the authorities would throw the book at the other prisoner, requiring him to spend 6 months in prison. If both prisoners denied being involved, then both would be held 1 month on a technicality, and if both prisoners confessed, they would both be held for 3 months.
 
-  To create $(\Theta,\mathcal A,L)$ out of this, label prisoner 1 as nature, and prisoner 2 as statistician. Denoting by 1 and 2 the respective decision to confess or deny. One gets $\Theta=\{1,2\}$, $\mathcal A=\{1,2\}$. The loss function is now demonstrated in the following table:
+  To create $(\Theta,\mathcal A,L)$ out of this, label prisoner 1 as nature, and prisoner 2 as statistician. Denoting by 1 and 2 the respective decision to confess or deny. One gets $\Theta=\\{1,2\\}$, $\mathcal A=\\{1,2\\}$. The loss function is now demonstrated in the following table:
 
   | $\mathcal A\setminus\Theta$ |  1   |  2   |
   | :-------------------------: | :--: | :--: |
@@ -40,14 +40,14 @@ The triplet $(\Theta,\mathcal A,L)$ defines what is called a **Game**, and is no
 
   That is, $L(1,1)=3,L(2,1)=0,L(1,2)=6,L(2,2)=1$.
 
-* <u>Example 2:</u> Suppose $\Theta=\{\theta_1=\text{no rain},\theta_2=\text{light rain},\theta_3=\text{heavy rain}\}$, $\mathcal A=\{a_1=\text{carrying an umbrella},a_2=\text{not carrying an umbrella}\}$.
+* <u>Example 2:</u> Suppose $\Theta=\\{\theta_1=\text{no rain},\theta_2=\text{light rain},\theta_3=\text{heavy rain}\\}$, $\mathcal A=\\{a_1=\text{carrying an umbrella},a_2=\text{not carrying an umbrella}\\}$.
 
   | $\mathcal A\setminus\Theta$ | $\theta_1$ | $\theta_2$ | $\theta_3$ |
   | :-------------------------: | :--------: | :--------: | :--------: |
   |            $a_1$            |     1      |     -1     |     -4     |
   |            $a_2$            |     0      |     1      |     3      |
 
-The above are examples of no-data decision problems. In statistics, however, we usually consider a random variable $X$ assuming values $x \in X$ with a family of possible distributions $\{P_\theta,\theta\in\Theta\}$. If we observe $X = x$, we take the action $\delta(x)\in\mathcal A$ according to some rule $\delta$. Such a $\delta$ is called a **Non-randomized Decision Rule**.
+The above are examples of no-data decision problems. In statistics, however, we usually consider a random variable $X$ assuming values $x \in X$ with a family of possible distributions $\\{P_\theta,\theta\in\Theta\\}$. If we observe $X = x$, we take the action $\delta(x)\in\mathcal A$ according to some rule $\delta$. Such a $\delta$ is called a **Non-randomized Decision Rule**.
 
 <u>**Def:**</u> A *non-randomized decision rule (function)* $\delta$ is a map from $\mathcal X$ to $\mathcal A$. 
 
@@ -153,9 +153,9 @@ Suppose $\mathcal D$ is the space of all non-randomized decision rules. We exten
 
 For example, suppose $\mathcal D=\\{\delta_1,\delta_2,\delta_3,\delta_4\\}$. A typical element of $\mathcal D^\star$ is a probability distribution $\delta^\star$ such that $\delta^\star$ assigns probability $p_i$ to $\delta_i$ $(i=1,2,3,4)$, $p_i\geq0$ and $\sum_{i=1}^4p_i=1$. In general, we shall write the risk function corresponding to $\delta^\star$ as $R(\theta,\delta^\star)=\mathbb ER(\theta,Y)$, where $Y$ is a random variable assuming values in $\mathcal D$ given by $\delta^\star$.
 
-{{< figure src="/images/STA7346-Eg-randomized-decision-risk.png" title="" >}}
+{{< figure src="/images/STA7346-Eg-randomized-decision-risk.png" title=" " >}}
 
-{{< figure src="/images/STA7346proof-S-convex.png" title="" >}}
+{{< figure src="/images/STA7346proof-S-convex.png" title=" " >}}
 
 
 
