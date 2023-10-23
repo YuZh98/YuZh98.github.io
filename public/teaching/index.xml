@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings on My New Hugo Site</title>
+    <link>https://zhengyu.github.io/teaching/</link>
+    <description>Recent content in Teachings on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>seanzhengyu1@gmail.com (Yu Zheng)</managingEditor>
+    <webMaster>seanzhengyu1@gmail.com (Yu Zheng)</webMaster>
+    <lastBuildDate>Sun, 21 May 2023 21:08:04 -0400</lastBuildDate><atom:link href="https://zhengyu.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Instructor] STA 3024: Introduction to Statistics II</title>
+      <link>https://zhengyu.github.io/teaching/sta3024/</link>
+      <pubDate>Sun, 21 May 2023 21:08:04 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/sta3024/</guid>
+      <description>Course information: Syllabus
+Lecture notes: (Credit to Maria Ripol for all the help in building the course structure and materials)
+week1 week2 week3 Mon &amp;amp; Wed, week3 Fri week4 Mon &amp;amp; Wed, week4 Fri week5 Mon &amp;amp; Wed week6 Fri week7 Mon &amp;amp; Wed, week7 Fri week8 Mon, week8 Fri week9 Mon week10 Mon, week10 Wed, week10 Fri week11 Mon, week11 Wed, week11 Fri week12 Mon, week12 Wed, week12 Fri week13 Mon, week13 Wed, week13 Fri week14 Mon, week14 Wed Exams Exam 1 practice exam, Exam 1 version A Exam 2 practice exam, Exam 2 version A Exam 3 practice exam, Exam 3 version A </description>
+    </item>
+    
+    <item>
+      <title>[Teaching Assistant] STA6275: Computing I: Optimization</title>
+      <link>https://zhengyu.github.io/teaching/sta6275/</link>
+      <pubDate>Thu, 01 Sep 2022 14:02:43 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/sta6275/</guid>
+      <description>Syllabus</description>
+    </item>
+    
+    <item>
+      <title>[Teaching Assistant] STA6166: Statistical Method in Research I</title>
+      <link>https://zhengyu.github.io/teaching/sta6166b/</link>
+      <pubDate>Fri, 01 Jul 2022 14:01:51 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/sta6166b/</guid>
+      <description>Instructor: Demetris Athienitis</description>
+    </item>
+    
+    <item>
+      <title>[Teaching Assistant] STA3032: Engineer Statistics</title>
+      <link>https://zhengyu.github.io/teaching/sta3032b/</link>
+      <pubDate>Sun, 01 May 2022 14:13:03 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/sta3032b/</guid>
+      <description>Instructor: Mak Xavier
+Syllabus</description>
+    </item>
+    
+    <item>
+      <title>[Teaching Assistant] STA3032: Engineer Statistics</title>
+      <link>https://zhengyu.github.io/teaching/sta3032a/</link>
+      <pubDate>Tue, 01 Feb 2022 14:02:11 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/sta3032a/</guid>
+      <description>Instructor: Linda Davis
+Syllabus</description>
+    </item>
+    
+    <item>
+      <title>[Teaching Assistant] STA6166: Statistical Method in Research I</title>
+      <link>https://zhengyu.github.io/teaching/sta6166a/</link>
+      <pubDate>Wed, 01 Sep 2021 14:01:37 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/sta6166a/</guid>
+      <description>Instructor: Brenda Betancourt</description>
+    </item>
+    
+    <item>
+      <title>[Undergraduate Teaching Assistant] Multivariate Calculus</title>
+      <link>https://zhengyu.github.io/teaching/mc/</link>
+      <pubDate>Sat, 01 Feb 2020 13:20:02 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/mc/</guid>
+      <description>Instructor: Huting Wang
+The course material highly resembles the one for Mathematical Analysis B2.</description>
+    </item>
+    
+    <item>
+      <title>[Undergraduate Teaching Assistant] Mathematical Statistics</title>
+      <link>https://zhengyu.github.io/teaching/ms/</link>
+      <pubDate>Sun, 01 Sep 2019 13:19:25 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/ms/</guid>
+      <description> Midterm Review Final Review </description>
+    </item>
+    
+    <item>
+      <title>[Undergraduate Teaching Assistant] Mathematical Analysis B2</title>
+      <link>https://zhengyu.github.io/teaching/maii/</link>
+      <pubDate>Fri, 01 Feb 2019 13:19:02 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/maii/</guid>
+      <description>Textbook Click here for the textbook. It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
+Below are some of the notes for the tutorial sessions: Week1-2 Week3-4 Week5-6 Week7-8 Midterm Review Week9-11 Week13-15 Final Review (part 1) Final Review (part 2) Credit to Yunfan Chang for notes week1-2, week7-8 and week13-15. Credit to Qianwei Xia for notes week5-6.
+Eexams Midterm exam with solutions</description>
+    </item>
+    
+    <item>
+      <title>[Undergraduate Teaching Assistant] Mathematical Analysis B1</title>
+      <link>https://zhengyu.github.io/teaching/mai/</link>
+      <pubDate>Sat, 01 Sep 2018 12:42:18 -0400</pubDate>
+      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
+      <guid>https://zhengyu.github.io/teaching/mai/</guid>
+      <description>Textbook Click here for the textbook. It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
+Below are some of the notes for the tutorial sessions: Week1-2 Week3-4 Week5-6 Week7-8 Week9-10 Week11-12 Week13-14 Week15-16 Credit to Yunfan Chang for notes week5-6, week11-12 and week15-16.
+Eexams Midterm exam with solutions
+Final exam with solutions
+Click here for some of the former exams. They are collected and integrated by Tian Wu.</description>
+    </item>
+    
+  </channel>
+</rss>
