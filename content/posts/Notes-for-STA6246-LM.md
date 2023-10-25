@@ -56,7 +56,7 @@ $$
 * $\mathcal C(\mathbf A\mathbf B)\subset \mathcal C(\mathbf A)$
 * If $\mathcal C(\mathbf A)\subset \mathcal C(\mathbf B)$, then there exista a matrix $\mathbf C$ such that $\mathbf A=\mathbf B\mathbf C$
 
-<u>**Def:**</u> The *null space* of a matrix, denoted by $\mathcal N(\mathbf A)$, is defined by $\mathcal N(\mathbf A)=\\{\mathbf y:\mathbf A\mathbf y=\mathbf 0\}$.
+<u>**Def:**</u> The *null space* of a matrix, denoted by $\mathcal N(\mathbf A)$, is defined by $\mathcal N(\mathbf A)=\\{\mathbf y:\mathbf A\mathbf y=\mathbf 0\\}$.
 
 Notice that if the matrix $\mathbf A$ is $m\times n$, then vectors in $\mathcal N(\mathbf A)$ have dimension $n$ while vectors in $\mathcal C(\mathbf A)$ have dimension $m$. Mathematically, this may be expressed as $\mathcal C(\mathbf A)\subset \mathbb R^m$ and $\mathcal N(\mathbf A)\subset \mathbb R^n$.
 
