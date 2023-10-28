@@ -1,5 +1,5 @@
 +++
-title = '[Undergraduate Teaching Assistant] Mathematical Statistics'
+title = '[Undergraduate TA] Mathematical Statistics'
 date = 2019-09-01T13:19:25-04:00
 draft = false
 +++

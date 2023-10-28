@@ -1,5 +1,5 @@
 +++
-title = '[Undergraduate Teaching Assistant] Mathematical Analysis B1'
+title = '[Undergraduate TA] Mathematical Analysis B1'
 date = 2018-09-01T12:42:18-04:00
 draft = false
 +++
@@ -8,7 +8,7 @@ draft = false
 
 [Click here for the textbook](/teaching/MAI/book1.pdf). It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
 
-### Below are some of the notes for the tutorial sessions:
+### Below are some of the notes for the tutorial sessions
 
 * [Week1-2](/teaching/MAI/LecNotes1.pdf)
 * [Week3-4](/teaching/MAI/LecNotes2.pdf)
@@ -27,4 +27,4 @@ draft = false
 
 * [Final exam with solutions](/teaching/MAI/finalexam.pdf)
 
-* [Click here for some of the former exams](/teaching/MAI/FormerExams.pdf). They are collected and integrated by [Tian Wu](http://home.ustc.edu.cn/~wt1997/index.html).
+* [Click here for some of the former exams](/teaching/MAI/FormerExams.pdf). They are collected and integrated by [Tian Wu](http://home.ustc.edu.cn/~wt1997/index.html)
