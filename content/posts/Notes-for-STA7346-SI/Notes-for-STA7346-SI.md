@@ -2,16 +2,14 @@
 title = 'STA7346: Statistical Inference'
 date = 2023-10-21T23:51:47-04:00
 draft = false
-description = 'This contains my notes for Statistical Inference'
+description = 'My notes for Statistical Inference in 2022 Fall at UF'
 +++
 
 <!--more--> 
 
+Instructor: [Zhihua Su](https://people.clas.ufl.edu/zhihuasu/)
 
-
-Instructor: [Prof. Zhihua Su](https://people.clas.ufl.edu/zhihuasu/)
-
-Taken by Yu Zheng
+Taken by Yu Zheng in 2022 fall
 
 ## Chapter 1: Decision Theory, Bayesian Analysis
 

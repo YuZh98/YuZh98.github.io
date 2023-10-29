@@ -2,15 +2,15 @@
 title = 'STA6246: Theory of Linear Models'
 date = 2023-10-21T23:51:47-04:00
 draft = false
-description = 'This contains my notes for Theory of Linear Models'
+description = 'My notes for Theory of Linear Models in 2022 Fall at UF'
 +++
 
 <!--more-->
 
 
-Instructor [Prof. James Hobert](https://scholar.google.com/citations?user=p-n5y8AAAAAJ&hl=en&oi=ao)
+Instructor [James Hobert](https://scholar.google.com/citations?user=p-n5y8AAAAAJ&hl=en&oi=ao)
 
-Taken by Yu Zheng
+Taken by Yu Zheng in 2022 fall
 
 
 
