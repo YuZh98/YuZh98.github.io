@@ -2,7 +2,7 @@
 title = 'Stochastic Process'
 date = 2023-10-28T22:14:33-04:00
 draft = false
-description = 'My notes for Stochastic Process in 2019 spring at USTC'
+description = 'My notes for Stochastic Process in 2019 Spring at USTC'
 +++
 
 <!--more--> 
