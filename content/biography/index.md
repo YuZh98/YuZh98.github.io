@@ -6,16 +6,14 @@ draft = false
 
 I am currently a Ph.D. candidate in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
 
-My research interests mainly lie in Bayesian modeling and machine learning methods. I have proposed innovative models and algorithms for problems such as high-dimensional clustering, variable selection, and image smoothing. On top of that, I am also interested in the convergence theory of MCMC algorithms.
-
+My research interests mainly lie in Bayesian modeling and machine learning methods. I have proposed innovative models and algorithms for problems such as high-dimensional clustering, variable selection, and image smoothing. On top of that, I am also interested in the asymptotic behavior of estimators and MCMC algorithms.
 
 ### Research Interests
 
 * Bayesian modeling
-* High-dimensional problems
+* High-dimensional clustering
 * Latent variable models
-* Convergence theory of MCMC algorithms
-
+* Limit theory
 
 ### Education
 
