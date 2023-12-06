@@ -13,7 +13,7 @@ My research interests mainly lie in Bayesian modeling and machine learning metho
 * Bayesian modeling
 * High-dimensional clustering
 * Latent variable models
-* Limit theory
+* Deep learning
 
 ### Education
 
