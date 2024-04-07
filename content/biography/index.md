@@ -10,9 +10,9 @@ My research interests mainly lie in Bayesian modeling and machine learning metho
 
 ### Research Interests
 
-* Bayesian modeling
+* Bayesian Nonparametrics
 * High-dimensional clustering
-* Latent variable models
+* Bayesian Asymptotic Theorem
 * Deep learning
 
 ### Education
