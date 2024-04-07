@@ -1,6 +1,6 @@
 +++
 title = 'STA7348: Bayesian Statistics'
-date = 2024-04-07T22:14:33-04:00
+date = 2024-04-06T22:14:33-04:00
 draft = false
 description = 'My notes for Bayesian Statistics in 2024 Spring at UF'
 +++
