@@ -4,16 +4,16 @@ date = 2023-10-21T23:12:49-04:00
 draft = false
 +++
 
-I am currently a Ph.D. candidate in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
+I am currently a Ph.D. student in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
 
-My research interests mainly lie in Bayesian modeling and machine learning methods. I have proposed innovative models and algorithms for problems such as high-dimensional clustering, variable selection, and image smoothing. On top of that, I am also interested in the asymptotic behavior of estimators and MCMC algorithms.
+My research interests mainly lie in Bayesian statistics and MCMC. More specifically, I focus on sparse modeling and high-dimensional clustering. My recent research focuses on (i) posterior consistency of clustering under the forest model and (ii) a problem of combinatorics and graph theory (spanning trees).
 
 ### Research Interests
 
 * Bayesian Nonparametrics
-* High-dimensional clustering
+* High-dimensional Clustering
 * Bayesian Asymptotic Theorem
-* Deep learning
+* Graph Theory
 
 ### Education
 
