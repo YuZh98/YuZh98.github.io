@@ -10,5 +10,7 @@ draft = false
 ### Contributed Presentations
 2023 Joint Statistical Meetings, Toronto, Canada (Aug 6, 2023) [slides](Talks/Blocked_Gibbs_Sampler_for_l1_Ball_Prior_Slide.pdf)
 
+Student seminar at University of Florida, Gainesville, Florida (Feb 27, 2024)
+
 ### Poster Sessions
 2024 Theory and Foundations of Statistics in the Era of Big Data, Tallahassee, Florida (Apr 20, 2024) [poster](Talks/Poster_Anti_correlation_Gaussian.pdf)
