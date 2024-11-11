@@ -6,7 +6,9 @@ draft = false
 
 I am currently a Ph.D. student in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
 
-My research interests mainly lie in Bayesian statistics and MCMC. More specifically, I focus on sparse modeling and high-dimensional clustering. My recent research focuses on (i) posterior consistency of clustering under the Bayesian spanning forest model and (ii) a problem of combinatorics and graph theory (spanning trees).
+My research interests center around Bayesian statistics and optimization, with a focus on high-dimensional clustering and combinatorial problems. I am particularly skilled in theoretical analysis, including convergence rate control and asymptotic distribution analysis. In addition to my analytical work, I enjoy programming in R, Python, and occasionally C++. With over five years of experience, I have developed machine learning and deep learning projects across a variety of applications.
+
+
 
 ### Research Interests
 
@@ -24,3 +26,9 @@ My research interests mainly lie in Bayesian statistics and MCMC. More specifica
 * **B.S. in Mathematics and Applied Mathematics**, 2016-2020
 
   *University of Science and Technology of China*
+
+### Work Experience
+
+* **Quantitative Research Intern**, Jun 2024 - Aug 2024
+  
+  *Susquehanna International Group (SIG)*
