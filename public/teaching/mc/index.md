@@ -1,6 +1,7 @@
-# [Undergraduate Teaching Assistant] Multivariate Calculus
+# [Undergraduate TA] Multivariate Calculus
 
 
 Instructor: Huting Wang
 
-The course material highly resembles the one for Mathematical Analysis B2.
+The course material highly resembles the one for Mathematical Analysis B2
+

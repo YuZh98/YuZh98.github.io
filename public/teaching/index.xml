@@ -2,113 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teachings on Yu Zheng&#39;s website</title>
-    <link>https://zhengyu.github.io/teaching/</link>
+    <link>http://localhost:1313/teaching/</link>
     <description>Recent content in Teachings on Yu Zheng&#39;s website</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>seanzhengyu1@gmail.com (Yu Zheng)</managingEditor>
-    <webMaster>seanzhengyu1@gmail.com (Yu Zheng)</webMaster>
-    <lastBuildDate>Sun, 21 May 2023 21:08:04 -0400</lastBuildDate><atom:link href="https://zhengyu.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 May 2023 21:08:04 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/teaching/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Instructor] STA 3024: Introduction to Statistics II</title>
-      <link>https://zhengyu.github.io/teaching/sta3024/</link>
+      <link>http://localhost:1313/teaching/sta3024/</link>
       <pubDate>Sun, 21 May 2023 21:08:04 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/sta3024/</guid>
-      <description>Course information: Syllabus
-Lecture notes: (Credit to Maria Ripol for all the help in building the course structure and materials)
-week1 week2 week3 Mon &amp;amp; Wed, week3 Fri week4 Mon &amp;amp; Wed, week4 Fri week5 Mon &amp;amp; Wed week6 Fri week7 Mon &amp;amp; Wed, week7 Fri week8 Mon, week8 Fri week9 Mon week10 Mon, week10 Wed, week10 Fri week11 Mon, week11 Wed, week11 Fri week12 Mon, week12 Wed, week12 Fri week13 Mon, week13 Wed, week13 Fri week14 Mon, week14 Wed Exams Exam 1 practice exam, Exam 1 version A Exam 2 practice exam, Exam 2 version A Exam 3 practice exam, Exam 3 version A </description>
+      <guid>http://localhost:1313/teaching/sta3024/</guid>
+      <description>&lt;h3 id=&#34;course-information&#34;&gt;Course information:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/Syllabus-STA3024.pdf&#34; rel=&#34;&#34;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;lecture-notes&#34;&gt;Lecture notes:&lt;/h3&gt;&#xA;&lt;p&gt;(Credit to &lt;a href=&#34;https://people.clas.ufl.edu/mripol/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Maria Ripol&lt;/a&gt; for all the help in building the course structure and materials)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week1_STA3024.pdf&#34; rel=&#34;&#34;&gt;week1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week2_STA3024.pdf&#34; rel=&#34;&#34;&gt;week2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week3MW_STA3024.pdf&#34; rel=&#34;&#34;&gt;week3 Mon &amp;amp; Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week3F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week3 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week4MW_STA3024.pdf&#34; rel=&#34;&#34;&gt;week4 Mon &amp;amp; Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week4F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week4 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week5MW_STA3024.pdf&#34; rel=&#34;&#34;&gt;week5 Mon &amp;amp; Wed&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week6F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week6 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week7MW_STA3024.pdf&#34; rel=&#34;&#34;&gt;week7 Mon &amp;amp; Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week7F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week7 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week8M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week8 Mon&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week8F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week8 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week9M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week9 Mon&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week10M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week10 Mon&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week10W_STA3024.pdf&#34; rel=&#34;&#34;&gt;week10 Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week10F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week10 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week11M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week11 Mon&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week11W_STA3024.pdf&#34; rel=&#34;&#34;&gt;week11 Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week11F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week11 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week12M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week12 Mon&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week12W_STA3024.pdf&#34; rel=&#34;&#34;&gt;week12 Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week12F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week12 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week13M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week13 Mon&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week13W_STA3024.pdf&#34; rel=&#34;&#34;&gt;week13 Wed&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week13F_STA3024.pdf&#34; rel=&#34;&#34;&gt;week13 Fri&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week14M_STA3024.pdf&#34; rel=&#34;&#34;&gt;week14 Mon&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Notes/Week14W_STA3024.pdf&#34; rel=&#34;&#34;&gt;week14 Wed&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;exams&#34;&gt;Exams&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Exams/PracticeExam_1_SP2023.pdf&#34; rel=&#34;&#34;&gt;Exam 1 practice exam&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Exams/Exam_1A_SP2023.pdf&#34; rel=&#34;&#34;&gt;Exam 1 version A&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Exams/PracticeExam_2_SP2023.pdf&#34; rel=&#34;&#34;&gt;Exam 2 practice exam&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Exams/Exam_2A_SP2023.pdf&#34; rel=&#34;&#34;&gt;Exam 2 version A&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Exams/PracticeExam_3_SP2023.pdf&#34; rel=&#34;&#34;&gt;Exam 3 practice exam&lt;/a&gt;,&#xA;&lt;a href=&#34;http://localhost:1313/teaching/STA3024/STA3024-Exams/Exam_3A_SP2023.pdf&#34; rel=&#34;&#34;&gt;Exam 3 version A&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>[Teaching Assistant] STA6275: Computing I: Optimization</title>
-      <link>https://zhengyu.github.io/teaching/sta6275/</link>
+      <link>http://localhost:1313/teaching/sta6275/</link>
       <pubDate>Thu, 01 Sep 2022 14:02:43 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/sta6275/</guid>
-      <description>Syllabus</description>
+      <guid>http://localhost:1313/teaching/sta6275/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA6275/syllabus.pdf&#34; rel=&#34;&#34;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Teaching Assistant] STA6166: Statistical Method in Research I</title>
-      <link>https://zhengyu.github.io/teaching/sta6166b/</link>
+      <link>http://localhost:1313/teaching/sta6166b/</link>
       <pubDate>Fri, 01 Jul 2022 14:01:51 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/sta6166b/</guid>
-      <description>Instructor: Demetris Athienitis</description>
+      <guid>http://localhost:1313/teaching/sta6166b/</guid>
+      <description>&lt;p&gt;Instructor: Demetris Athienitis&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Teaching Assistant] STA3032: Engineer Statistics</title>
-      <link>https://zhengyu.github.io/teaching/sta3032b/</link>
+      <link>http://localhost:1313/teaching/sta3032b/</link>
       <pubDate>Sun, 01 May 2022 14:13:03 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/sta3032b/</guid>
-      <description>Instructor: Mak Xavier
-Syllabus</description>
+      <guid>http://localhost:1313/teaching/sta3032b/</guid>
+      <description>&lt;p&gt;Instructor: Mak Xavier&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3032/STA3032_Syllabus_Mak.pdf&#34; rel=&#34;&#34;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Teaching Assistant] STA3032: Engineer Statistics</title>
-      <link>https://zhengyu.github.io/teaching/sta3032a/</link>
+      <link>http://localhost:1313/teaching/sta3032a/</link>
       <pubDate>Tue, 01 Feb 2022 14:02:11 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/sta3032a/</guid>
-      <description>Instructor: Linda Davis
-Syllabus</description>
+      <guid>http://localhost:1313/teaching/sta3032a/</guid>
+      <description>&lt;p&gt;Instructor: Linda Davis&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/STA3032/syllabus_3032_UFO_Spring2022.pdf&#34; rel=&#34;&#34;&gt;Syllabus&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Teaching Assistant] STA6166: Statistical Method in Research I</title>
-      <link>https://zhengyu.github.io/teaching/sta6166a/</link>
+      <link>http://localhost:1313/teaching/sta6166a/</link>
       <pubDate>Wed, 01 Sep 2021 14:01:37 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/sta6166a/</guid>
-      <description>Instructor: Brenda Betancourt</description>
+      <guid>http://localhost:1313/teaching/sta6166a/</guid>
+      <description>&lt;p&gt;Instructor: Brenda Betancourt&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>[Undergraduate Teaching Assistant] Multivariate Calculus</title>
-      <link>https://zhengyu.github.io/teaching/mc/</link>
+      <title>[Undergraduate TA] Multivariate Calculus</title>
+      <link>http://localhost:1313/teaching/mc/</link>
       <pubDate>Sat, 01 Feb 2020 13:20:02 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/mc/</guid>
-      <description>Instructor: Huting Wang
-The course material highly resembles the one for Mathematical Analysis B2.</description>
+      <guid>http://localhost:1313/teaching/mc/</guid>
+      <description>&lt;p&gt;Instructor: Huting Wang&lt;/p&gt;&#xA;&lt;p&gt;The course material highly resembles the one for Mathematical Analysis B2&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>[Undergraduate Teaching Assistant] Mathematical Statistics</title>
-      <link>https://zhengyu.github.io/teaching/ms/</link>
+      <title>[Undergraduate TA] Mathematical Statistics</title>
+      <link>http://localhost:1313/teaching/ms/</link>
       <pubDate>Sun, 01 Sep 2019 13:19:25 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/ms/</guid>
-      <description> Midterm Review Final Review </description>
+      <guid>http://localhost:1313/teaching/ms/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MS/MidReview.pdf&#34; rel=&#34;&#34;&gt;Midterm Review&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MS/FinalReview.pdf&#34; rel=&#34;&#34;&gt;Final Review&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
-      <title>[Undergraduate Teaching Assistant] Mathematical Analysis B2</title>
-      <link>https://zhengyu.github.io/teaching/maii/</link>
+      <title>[Undergraduate TA] Mathematical Analysis B2</title>
+      <link>http://localhost:1313/teaching/maii/</link>
       <pubDate>Fri, 01 Feb 2019 13:19:02 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/maii/</guid>
-      <description>Textbook Click here for the textbook. It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
-Below are some of the notes for the tutorial sessions: Week1-2 Week3-4 Week5-6 Week7-8 Midterm Review Week9-11 Week13-15 Final Review (part 1) Final Review (part 2) Credit to Yunfan Chang for notes week1-2, week7-8 and week13-15. Credit to Qianwei Xia for notes week5-6.
-Eexams Midterm exam with solutions</description>
+      <guid>http://localhost:1313/teaching/maii/</guid>
+      <description>&lt;h3 id=&#34;textbook&#34;&gt;Textbook&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/book2.pdf&#34; rel=&#34;&#34;&gt;Click here for the textbook&lt;/a&gt;. It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.&lt;/p&gt;&#xA;&lt;h3 id=&#34;below-are-some-of-the-notes-for-the-tutorial-sessions&#34;&gt;Below are some of the notes for the tutorial sessions&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/LecNotes1.pdf&#34; rel=&#34;&#34;&gt;Week1-2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/LecNotes2.pdf&#34; rel=&#34;&#34;&gt;Week3-4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/LecNotes3.pdf&#34; rel=&#34;&#34;&gt;Week5-6&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/LecNotes4.pdf&#34; rel=&#34;&#34;&gt;Week7-8&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/MidtermReview.pdf&#34; rel=&#34;&#34;&gt;Midterm Review&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/LecNotes5.pdf&#34; rel=&#34;&#34;&gt;Week9-11&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes6.pdf&#34; rel=&#34;&#34;&gt;Week13-15&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/FinalReview1.pdf&#34; rel=&#34;&#34;&gt;Final Review (part 1)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/FinalReview2.pdf&#34; rel=&#34;&#34;&gt;Final Review (part 2)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Credit to &lt;a href=&#34;https://changyf98.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Yunfan Chang&lt;/a&gt; for notes week1-2, week7-8 and week13-15. Credit to Qianwei Xia for notes week5-6.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;exams&#34;&gt;Exams&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAII/midexam.pdf&#34; rel=&#34;&#34;&gt;Midterm exam with solutions&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>[Undergraduate Teaching Assistant] Mathematical Analysis B1</title>
-      <link>https://zhengyu.github.io/teaching/mai/</link>
+      <title>[Undergraduate TA] Mathematical Analysis B1</title>
+      <link>http://localhost:1313/teaching/mai/</link>
       <pubDate>Sat, 01 Sep 2018 12:42:18 -0400</pubDate>
-      <author>seanzhengyu1@gmail.com (Yu Zheng)</author>
-      <guid>https://zhengyu.github.io/teaching/mai/</guid>
-      <description>Textbook Click here for the textbook. It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
-Below are some of the notes for the tutorial sessions: Week1-2 Week3-4 Week5-6 Week7-8 Week9-10 Week11-12 Week13-14 Week15-16 Credit to Yunfan Chang for notes week5-6, week11-12 and week15-16.
-Eexams Midterm exam with solutions
-Final exam with solutions
-Click here for some of the former exams. They are collected and integrated by Tian Wu.</description>
+      <guid>http://localhost:1313/teaching/mai/</guid>
+      <description>&lt;h3 id=&#34;textbook&#34;&gt;Textbook&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/book1.pdf&#34; rel=&#34;&#34;&gt;Click here for the textbook&lt;/a&gt;. It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.&lt;/p&gt;&#xA;&lt;h3 id=&#34;below-are-some-of-the-notes-for-the-tutorial-sessions&#34;&gt;Below are some of the notes for the tutorial sessions&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes1.pdf&#34; rel=&#34;&#34;&gt;Week1-2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes2.pdf&#34; rel=&#34;&#34;&gt;Week3-4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes3.pdf&#34; rel=&#34;&#34;&gt;Week5-6&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes4.pdf&#34; rel=&#34;&#34;&gt;Week7-8&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes5.pdf&#34; rel=&#34;&#34;&gt;Week9-10&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes6.pdf&#34; rel=&#34;&#34;&gt;Week11-12&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes7.pdf&#34; rel=&#34;&#34;&gt;Week13-14&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/LecNotes8.pdf&#34; rel=&#34;&#34;&gt;Week15-16&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Credit to &lt;a href=&#34;https://changyf98.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Yunfan Chang&lt;/a&gt; for notes week5-6, week11-12 and week15-16.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;eexams&#34;&gt;Eexams&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/midexam.pdf&#34; rel=&#34;&#34;&gt;Midterm exam with solutions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/finalexam.pdf&#34; rel=&#34;&#34;&gt;Final exam with solutions&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/teaching/MAI/FormerExams.pdf&#34; rel=&#34;&#34;&gt;Click here for some of the former exams&lt;/a&gt;. They are collected and integrated by &lt;a href=&#34;http://home.ustc.edu.cn/~wt1997/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Tian Wu&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
