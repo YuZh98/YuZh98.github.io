@@ -1,4 +1,4 @@
-# [Undergraduate Teaching Assistant] Mathematical Statistics
+# [Undergraduate TA] Mathematical Statistics
 
 
 * [Midterm Review](/teaching/MS/MidReview.pdf)

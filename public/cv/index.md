@@ -1,5 +1,5 @@
 # 
 
 
-[My CV](/cv/Yu_Zheng_Resume.pdf)
+[My CV](Yu_Zheng_CV.pdf)
 

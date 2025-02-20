@@ -1,18 +1,21 @@
 # Biography
 
 
-I am currenyly a Ph.D. candidate in Statistics at University of Florida (UF), advised by professor [Leo L. Duan](https://leoduan.github.io/).
+I am currently a Ph.D. student in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
 
-My research interests mainly lie in Bayesian modeling and machine learning methods. I have proposed innovative models and algorithms for problems such as high-dimensional clustering, variable selection, and image smoothing. On top of that, I am also interested in the convergence theory of MCMC algorithms.
+My research interests center around Bayesian statistics and optimization, with a focus on high-dimensional clustering and combinatorial problems. I am particularly skilled in theoretical analysis, including convergence rate control and asymptotic distribution analysis. In addition to my analytical work, I enjoy programming in R, Python, and occasionally C++. With over five years of experience, I have developed machine learning and deep learning projects across a variety of applications.
+
+
 
 ### Research Interests
-* Bayesian modeling
-* High-dimensional problems
-* Latent variable models
-* Convergence theory of MCMC algorithms
 
+* Bayesian Nonparametrics
+* High-dimensional Clustering
+* Bayesian Asymptotic Theorem
+* Graph Theory
 
 ### Education
+
 * **Ph.D. in Statistics** (Ongoing), 2021-2025
 
   *University of Florida*
@@ -21,3 +24,8 @@ My research interests mainly lie in Bayesian modeling and machine learning metho
 
   *University of Science and Technology of China*
 
+### Work Experience
+
+* **Quantitative Research Intern**, Jun 2024 - Aug 2024
+  
+  *Susquehanna International Group (SIG)*
