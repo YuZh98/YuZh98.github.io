@@ -4,7 +4,7 @@ date = 2023-10-21T23:12:49-04:00
 draft = false
 +++
 
-I am currently a Ph.D. student in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
+I am currently a Ph.D. candidate in Statistics at University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
 
 My research interests center around Bayesian statistics and optimization, with a focus on high-dimensional clustering and combinatorial problems. I am particularly skilled in theoretical analysis, including convergence rate control and asymptotic distribution analysis. In addition to my analytical work, I enjoy programming in R, Python, and occasionally C++. With over five years of experience, I have developed machine learning and deep learning projects across a variety of applications.
 
@@ -13,13 +13,13 @@ My research interests center around Bayesian statistics and optimization, with a
 ### Research Interests
 
 * Bayesian Nonparametrics
-* High-dimensional Clustering
-* Bayesian Asymptotic Theorem
-* Graph Theory
+* Graph-based High-dimensional Clustering
+* Bayesian Asymptotic Analysis
+* Combinatorial Data Analysis
 
 ### Education
 
-* **Ph.D. in Statistics** (Ongoing), 2021-2025
+* **Ph.D. in Statistics** (Ongoing), 2021-2026
 
   *University of Florida*
 
