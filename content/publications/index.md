@@ -16,7 +16,7 @@ draft = false
 
 Student seminar at University of Florida, Gainesville, Florida (Feb 27, 2024)
 
-2025 BAYSM, virtual conference (Apr 10, 2025) [slides](Talks/_2025_BAYSM__Clustering_Consistency_Slide)
+2025 BAYSM, virtual conference (Apr 10, 2025) [slides](Talks/_2025_BAYSM__Clustering_Consistency_Slide.pdf)
 
 ### Poster Sessions
 2024 Theory and Foundations of Statistics in the Era of Big Data, Tallahassee, Florida (Apr 20, 2024) [poster](Talks/Poster_Anti_correlation_Gaussian.pdf)
