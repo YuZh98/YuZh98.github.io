@@ -5,9 +5,7 @@ draft = false
 +++
 
 ### Preprints
-**Yu Zheng**, Malay Ghosh, and Leo L. Duan. (2025+). Statistical Modeling of Combinatorial Response Data. *Manuscript in preparation*.
-
-**Yu Zheng**, Zhengwu Zhang, and Leo L. Duan. (2025+). Convex and Decomposition-free Estimation of Permutably Block-diagonal Matrix. *Manuscript in preparation*.
+**Yu Zheng**, Malay Ghosh, and Leo L. Duan. (2025+). Statistical Modeling of Combinatorial Response Data. *Available soon on arXiv*. [Github](https://github.com/YuZh98/Combinatorial_Data_Modeling).
 
 **Yu Zheng**, Leo L. Duan, and Arkaprava Roy. (2025+). Consistency of Graphical Model-based Clustering: Robust Clustering using Bayesian Spanning Forest [arXiv](https://arxiv.org/abs/2409.19129)
 
@@ -17,6 +15,8 @@ draft = false
 2023 Joint Statistical Meetings, Toronto, Canada (Aug 6, 2023) [slides](Talks/Blocked_Gibbs_Sampler_for_l1_Ball_Prior_Slide.pdf)
 
 Student seminar at University of Florida, Gainesville, Florida (Feb 27, 2024)
+
+2025 BAYSM, virtual conference (Apr 10, 2025) [slides](Talks/_2025_BAYSM__Clustering_Consistency_Slide)
 
 ### Poster Sessions
 2024 Theory and Foundations of Statistics in the Era of Big Data, Tallahassee, Florida (Apr 20, 2024) [poster](Talks/Poster_Anti_correlation_Gaussian.pdf)
