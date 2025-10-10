@@ -5,7 +5,7 @@ draft = false
 +++
 
 ### Preprints
-**Yu Zheng**, Malay Ghosh, and Leo L. Duan. (2025+). Statistical Modeling of Combinatorial Response Data. [arXiv](https://arxiv.org/abs/2504.11630). (Under Review at JASA)
+**Yu Zheng**, Malay Ghosh, and Leo L. Duan. (2025+). Statistical Modeling of Combinatorial Response Data. [arXiv](https://arxiv.org/abs/2504.11630). (Revision at JASA)
 
 **Yu Zheng**, Leo L. Duan, and Arkaprava Roy. (2025+). Consistency of Graphical Model-based Clustering: Robust Clustering using Bayesian Spanning Forest. [arXiv](https://arxiv.org/abs/2409.19129). (Under Review at Bernoulli)
 
