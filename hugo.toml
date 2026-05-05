@@ -4,7 +4,7 @@ baseURL = "https://YuZh98.github.io/"
 theme = "LoveIt"
 
 # website title
-title = "Yu Zheng's website"
+title = "Hugh Zheng's website"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -33,13 +33,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "Yu Zheng"
+  name = "Hugh Zheng"
   email = "seanzhengyu1@gmail.com"
   link = ""
 
 # Author config used by the LoveIt theme (footer, schema, etc.)
 [params.author]
-  name = "Yu Zheng"
+  name = "Hugh Zheng"
   email = "seanzhengyu1@gmail.com"
   link = ""
 
@@ -100,9 +100,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "Yu Zheng — Statistics"
+  title = "Hugh Zheng — Statistics"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Personal website of Yu Zheng, Ph.D. candidate in Statistics at the University of Florida. Research on Bayesian methods, scalable algorithms, and combinatorial data analysis."
+  description = "Personal website of Hugh Zheng, Ph.D. candidate in Statistics at the University of Florida. Research on Bayesian methods, scalable algorithms, and combinatorial data analysis."
   # website images for Open Graph and Twitter Cards
   images = ["/images/avatar.JPG"]
 
@@ -117,7 +117,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = "Yu Zheng"
+      name = "Hugh Zheng"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -164,7 +164,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "Yu Zheng"
+    title = "Hugh Zheng"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -210,7 +210,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of avatar shown in home page
       avatarURL = "/images/avatar.JPG"
       #  title shown in home page (HTML format is supported)
-      title = "Yu Zheng"
+      title = "Hugh Zheng"
       # subtitle shown in home page (HTML format is supported)
       subtitle = "If you want the rainbow, you gotta put up with the rain!"
       # whether to use typeit animation for subtitle

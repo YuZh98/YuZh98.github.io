@@ -4,7 +4,7 @@ date = 2023-10-21T23:12:49-04:00
 draft = false
 +++
 
-I am currently a Ph.D. candidate in Statistics at the University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/).
+I am Hugh Zheng, a Ph.D. candidate in Statistics at the University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/). I publish as **Yu Zheng**.
 
 My research interests center around Bayesian statistics and optimization. I enjoy developing scalable Bayesian algorithms and designing novel statistical models for combinatorial data. I am particularly skilled in theoretical analysis, including convergence rate control and asymptotic analysis. In addition to my analytical work, I enjoy programming in R, Python, and C++. With over five years of experience, I have developed machine learning projects across a variety of applications.
 

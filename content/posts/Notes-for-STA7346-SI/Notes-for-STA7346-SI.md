@@ -9,7 +9,7 @@ description = 'My notes for Statistical Inference in 2022 Fall at UF'
 
 Instructor: [Zhihua Su](https://people.clas.ufl.edu/zhihuasu/)
 
-Taken by Yu Zheng in 2022 fall
+Taken by Hugh Zheng in 2022 fall
 
 ## Chapter 1: Decision Theory, Bayesian Analysis
 
