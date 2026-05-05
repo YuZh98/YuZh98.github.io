@@ -9,6 +9,6 @@ description = 'My notes for Bayesian Statistics in 2024 Spring at UF'
 
 Instructor: Malay Ghosh
 
-Taken by Yu Zheng in 2024 spring
+Taken by Hugh Zheng in 2024 spring
 
 * So far only have the first few lectures [Notes](Bayesian_Statistics.pdf)

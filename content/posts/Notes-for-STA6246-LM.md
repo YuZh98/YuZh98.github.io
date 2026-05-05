@@ -10,7 +10,7 @@ description = 'My notes for Theory of Linear Models in 2022 Fall at UF'
 
 Instructor [James Hobert](https://scholar.google.com/citations?user=p-n5y8AAAAAJ&hl=en&oi=ao)
 
-Taken by Yu Zheng in 2022 fall
+Taken by Hugh Zheng in 2022 fall
 
 
 

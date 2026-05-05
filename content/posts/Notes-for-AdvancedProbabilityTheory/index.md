@@ -9,7 +9,7 @@ description = 'My notes for Advanced Probability Theory in 2018 Fall at USTC'
 
 Instructor: Lijun Bo
 
-Taken by Yu Zheng in 2019 spring
+Taken by Hugh Zheng in 2019 spring
 
 * [Chapter 1: Probability Space and Random Variable](AdvancedProbabilityTheory_Notes/Chap1.pdf)
 * [Chapter 2: Distribution, Expectation, Independence and Product Measure](AdvancedProbabilityTheory_Notes/Chap2.pdf)
