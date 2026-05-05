@@ -6,7 +6,7 @@ draft = false
 
 ### Textbook
 
-[Click here for the textbook](/teaching/MAI/book1.pdf). It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
+[Click here for the textbook](/teaching/MAI/book1.pdf). It is under revision every year. Please refer to the department of Mathematics at USTC for the latest version.
 
 ### Below are some of the notes for the tutorial sessions
 
@@ -21,7 +21,7 @@ draft = false
 
 **Credit to [Yunfan Chang](https://changyf98.github.io/) for notes week5-6, week11-12 and week15-16.**
 
-### Eexams
+### Exams
 
 * [Midterm exam with solutions](/teaching/MAI/midexam.pdf)
 
