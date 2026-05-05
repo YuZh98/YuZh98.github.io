@@ -43,10 +43,12 @@ jobs:
         run: sudo snap install dart-sass
 
       - name: Checkout
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v4
         with:
           submodules: recursive
-          fetch-depth: 0
+          # Shallow clone is sufficient: enableGitInfo is false in
+          # hugo.toml, so Hugo never reads commit history at build time.
+          fetch-depth: 1
 
       - name: Setup Pages
         id: pages
