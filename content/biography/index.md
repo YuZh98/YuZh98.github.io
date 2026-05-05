@@ -25,7 +25,7 @@ I embrace this transformation. To me, quantitative research is about building ef
 * Graph-model Based Clustering
 * Bayesian Asymptotic Analysis
 * Combinatorial Data Analysis
-* (Mixed) Inetger Programming
+* (Mixed) Integer Programming
 
 ### Education
 
