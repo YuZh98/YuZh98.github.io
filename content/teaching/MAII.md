@@ -6,7 +6,7 @@ draft = false
 
 ### Textbook
 
-[Click here for the textbook](/teaching/MAII/book2.pdf). It is under revision every year. Please refer to the department of Mathematics at USTC for the lastest version.
+[Click here for the textbook](/teaching/MAII/book2.pdf). It is under revision every year. Please refer to the department of Mathematics at USTC for the latest version.
 
 ### Below are some of the notes for the tutorial sessions
 
@@ -16,7 +16,7 @@ draft = false
 * [Week7-8](/teaching/MAII/LecNotes4.pdf)
 * [Midterm Review](/teaching/MAII/MidtermReview.pdf)
 * [Week9-11](/teaching/MAII/LecNotes5.pdf)
-* [Week13-15](/teaching/MAI/LecNotes6.pdf)
+* [Week13-15](/teaching/MAII/LecNotes6.pdf)
 * [Final Review (part 1)](/teaching/MAII/FinalReview1.pdf)
 * [Final Review (part 2)](/teaching/MAII/FinalReview2.pdf)
 
