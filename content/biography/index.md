@@ -6,16 +6,16 @@ draft = false
 
 I am Hugh Zheng, a Ph.D. candidate in Statistics at the University of Florida (UF), advised by Dr. [Leo L. Duan](https://leoduan.github.io/). I publish as **Yu Zheng**.
 
-My research interests center around Bayesian statistics and optimization. I enjoy developing scalable Bayesian algorithms and designing novel statistical models for combinatorial data. I am particularly skilled in theoretical analysis, including convergence rate control and asymptotic analysis. In addition to my analytical work, I enjoy programming in R, Python, and C++. With over five years of experience, I have developed machine learning projects across a variety of applications.
+My research builds probabilistic models for combinatorial and structured data, with a focus on the algorithms and proofs that make them work at scale. Recent projects include anti-correlation Gaussian data augmentation for sampling under high-dimensional constraints, integer-program-based likelihoods for combinatorial response data, and a 3D-convolutional variational autoencoder for resting-state fMRI. I work in Python, R, and C++, with PyTorch and CUDA for deep generative models and Rcpp for the C++ samplers. I prove the convergence theorems and write the code that runs them.
 
-I am passionate about machine learning, statistical modeling, and quantitative research, with a strong belief in the power of data-driven decision-making. Over the last decade, AI has transformed every aspect of our lives, and financial markets are no exception: trading is rapidly shifting from human intuition to systematic, model-driven strategies powered by vast streams of information that no human could process alone.
+What draws me to this work is the interplay between mathematical structure and modern machine learning. The most interesting problems sit where probabilistic theory meets practical inference: how to sample efficiently when the parameter space has hard constraints, how to train deep generative models on medical imaging without overfitting, how to keep the optimization landscape tractable as the model grows.
 
-I embrace this transformation. To me, quantitative research is about building efficient models that harness data, balance risk and reward, and adapt to fast-moving markets. With a background in mathematics and statistics and research experience in scalable Bayesian methods and deep learning architecture, I am prepared to contribute to innovative strategies in a fast-paced, data-driven environment, and **I welcome opportunities to connect about roles in quantitative research and machine learning**.
+Beyond research, I care about making the methods usable. My three publications each ship with reproducibility code, and I maintain open-source tools including [`latex2arxiv`](https://github.com/YuZh98/latex2arxiv), a LaTeX-to-arXiv pipeline distributed as a PyPI package, a GitHub Action, and an MCP server. Writing the package usually teaches me what the paper actually claims.
 
 
 ### Key Words
 * High-dimensional data
-* Combinatorial problem
+* Combinatorial problems
 * Posterior consistency
 
 
@@ -29,7 +29,7 @@ I embrace this transformation. To me, quantitative research is about building ef
 
 ### Education
 
-* **Ph.D. in Statistics** (Ongoing), 2021-2026
+* **Ph.D. in Statistics** (Ongoing)
 
   *University of Florida*
 
