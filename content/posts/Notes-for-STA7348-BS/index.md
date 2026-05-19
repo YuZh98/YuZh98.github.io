@@ -11,4 +11,4 @@ Instructor: Malay Ghosh
 
 Taken by Hugh Zheng in 2024 spring
 
-* So far only have the first few lectures [Notes](Bayesian_Statistics.pdf)
+* So far only have the first few lectures [Notes](https://github.com/YuZh98/YuZh98.github.io/releases/download/pdfs-v1/posts__Notes-for-STA7348-BS__Bayesian_Statistics.pdf)
