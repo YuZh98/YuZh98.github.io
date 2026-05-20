@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#155e75"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="prior" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="post" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Prior (wide, flat) -->
+  <path d="M 540 540 C 600 540 620 540 640 540 C 680 535 700 520 720 470 C 740 420 760 360 780 340 C 800 320 820 360 840 420 C 860 470 880 520 920 535 C 940 540 960 540 1170 540 Z"
+        fill="url(#prior)"/>
+  <path d="M 540 540 C 600 540 620 540 640 540 C 680 535 700 520 720 470 C 740 420 760 360 780 340 C 800 320 820 360 840 420 C 860 470 880 520 920 535 C 940 540 960 540 1170 540"
+        fill="none" stroke="#67e8f9" stroke-width="2" stroke-opacity="0.7"/>
+
+  <!-- Posterior (narrower, taller) -->
+  <path d="M 740 540 C 770 540 790 540 810 540 C 840 540 860 530 880 480 C 900 420 920 290 940 250 C 960 290 980 420 1000 480 C 1020 530 1040 540 1060 540 C 1080 540 1100 540 1170 540 Z"
+        fill="url(#post)"/>
+  <path d="M 740 540 C 770 540 790 540 810 540 C 840 540 860 530 880 480 C 900 420 920 290 940 250 C 960 290 980 420 1000 480 C 1020 530 1040 540 1060 540 C 1080 540 1100 540 1170 540"
+        fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+
+  <!-- Legend dots -->
+  <circle cx="565" cy="290" r="6" fill="#67e8f9"/>
+  <text x="580" y="296" font-family="Georgia, serif" font-size="18" fill="#67e8f9" fill-opacity="0.9" font-style="italic">π(θ)</text>
+  <circle cx="565" cy="320" r="6" fill="#a78bfa"/>
+  <text x="580" y="326" font-family="Georgia, serif" font-size="18" fill="#a78bfa" fill-opacity="0.95" font-style="italic">π(θ | x)</text>
+
+  <!-- Bayes rule -->
+  <text x="60" y="500" font-family="Georgia, serif" font-size="42" fill="#a78bfa" opacity="0.6">π(θ | x) ∝ p(x | θ) π(θ)</text>
+
+  <!-- Title -->
+  <text x="60" y="160" font-family="Georgia, serif" font-size="60" font-weight="600" fill="#ecfeff">Bayesian Statistics</text>
+  <text x="60" y="205" font-family="Georgia, serif" font-size="22" fill="#67e8f9" font-style="italic">priors · posteriors · conjugacy · MCMC · decision theory</text>
+</svg>
