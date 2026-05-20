@@ -34,13 +34,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Author config
 [author]
   name = "Hugh Zheng"
-  email = "seanzhengyu1@gmail.com"
+  email = "hugh.stats@gmail.com"
   link = ""
 
 # Author config used by the LoveIt theme (footer, schema, etc.)
 [params.author]
   name = "Hugh Zheng"
-  email = "seanzhengyu1@gmail.com"
+  email = "hugh.stats@gmail.com"
   link = ""
 
 # Menu config
@@ -238,7 +238,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       weight = 10
       name = "E-Mail"
       class = "far fa-envelope fa-fw"
-      url = "mailto:seanzhengyu1@gmail.com"
+      url = "mailto:hugh.stats@gmail.com"
       title = "Email"
     [params.social.LinkedIn]
       weight = 1
