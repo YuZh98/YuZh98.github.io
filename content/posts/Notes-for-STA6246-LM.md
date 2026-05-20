@@ -3,6 +3,8 @@ title = 'STA6246: Theory of Linear Models'
 date = 2023-10-21T23:51:47-04:00
 draft = false
 description = 'My notes for Theory of Linear Models in 2022 Fall at UF'
+featuredImage = "/images/post-covers/linear-models.svg"
+featuredImagePreview = "/images/post-covers/linear-models.svg"
 +++
 
 <!--more-->
