@@ -1,34 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e1b4b"/>
-      <stop offset="100%" stop-color="#581c87"/>
+      <stop offset="0%" stop-color="#150e2e"/>
+      <stop offset="60%" stop-color="#2a1b56"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
     </linearGradient>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
     </pattern>
-    <radialGradient id="glow" cx="0.7" cy="0.55" r="0.4">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
+    <radialGradient id="glow" cx="0.74" cy="0.5" r="0.45">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.55"/>
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="ringStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f0abfc" stop-opacity="0.5"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <!-- Nested sigma-algebra rectangles -->
-  <g transform="translate(820 315)" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.85">
-    <rect x="-220" y="-160" width="440" height="320" rx="14"/>
-    <rect x="-170" y="-115" width="340" height="230" rx="12" stroke-opacity="0.6"/>
-    <rect x="-115" y="-70" width="230" height="140" rx="10" stroke-opacity="0.45"/>
-    <rect x="-55" y="-30" width="110" height="60" rx="8" stroke-opacity="0.3"/>
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <rect width="1200" height="480" fill="url(#grid)"/>
+  <rect width="1200" height="480" fill="url(#glow)"/>
+
+  <!-- Large translucent integral as background mark -->
+  <text x="80" y="380" font-family="Georgia, serif" font-size="380" fill="#f5d0fe" fill-opacity="0.10" font-style="italic">∫</text>
+
+  <!-- Concentric sigma-algebra rings, right-anchored -->
+  <g transform="translate(880 240)" fill="none">
+    <circle cx="0" cy="0" r="190" stroke="url(#ringStroke)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="2 6"/>
+    <circle cx="0" cy="0" r="150" stroke="url(#ringStroke)" stroke-width="1.5" stroke-opacity="0.55"/>
+    <circle cx="0" cy="0" r="110" stroke="url(#ringStroke)" stroke-width="1.6" stroke-opacity="0.75"/>
+    <circle cx="0" cy="0" r="70" stroke="url(#ringStroke)" stroke-width="1.8" stroke-opacity="0.9"/>
+    <circle cx="0" cy="0" r="36" stroke="#f0abfc" stroke-width="2" stroke-opacity="0.95"/>
   </g>
-  <text x="820" y="330" font-family="Georgia, serif" font-size="120" fill="#f5d0fe" text-anchor="middle" font-style="italic" opacity="0.9">σ</text>
 
-  <!-- Integral motif -->
-  <text x="60" y="540" font-family="Georgia, serif" font-size="160" fill="#f5d0fe" opacity="0.18">∫</text>
+  <!-- Sigma glyph centered on rings -->
+  <text x="880" y="282" font-family="Georgia, serif" font-size="100" fill="#fdf4ff" text-anchor="middle" font-style="italic" opacity="0.95">σ</text>
 
-  <!-- Title -->
-  <text x="60" y="160" font-family="Georgia, serif" font-size="60" font-weight="600" fill="#fdf4ff">Advanced Probability Theory</text>
-  <text x="60" y="205" font-family="Georgia, serif" font-size="22" fill="#c084fc" font-style="italic">measure spaces · limit theorems · martingale convergence</text>
+  <!-- Sample dots scattered between rings -->
+  <g fill="#f0abfc">
+    <circle cx="750" cy="180" r="3" opacity="0.85"/>
+    <circle cx="820" cy="130" r="2.5" opacity="0.75"/>
+    <circle cx="975" cy="160" r="3.5" opacity="0.9"/>
+    <circle cx="1020" cy="230" r="2.5" opacity="0.8"/>
+    <circle cx="965" cy="340" r="3" opacity="0.85"/>
+    <circle cx="800" cy="350" r="2.5" opacity="0.75"/>
+    <circle cx="720" cy="280" r="3" opacity="0.85"/>
+  </g>
+
+  <!-- Faint chord between two sample points -->
+  <line x1="750" y1="180" x2="965" y2="340" stroke="#f0abfc" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="4 4"/>
 </svg>

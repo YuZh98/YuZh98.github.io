@@ -1,47 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="0%" stop-color="#1c0c08"/>
+      <stop offset="55%" stop-color="#451a03"/>
       <stop offset="100%" stop-color="#7c2d12"/>
     </linearGradient>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
     </pattern>
+    <radialGradient id="glow" cx="0.62" cy="0.55" r="0.5">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="curveA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.7"/>
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.75"/>
       <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="curveB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#facc15" stop-opacity="0.7"/>
+      <stop offset="0%" stop-color="#facc15" stop-opacity="0.78"/>
       <stop offset="100%" stop-color="#facc15" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="reject" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fda4af" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#fda4af" stop-opacity="0"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- Null distribution -->
-  <path d="M 540 540 C 600 540 620 540 640 540 C 690 540 720 530 750 480 C 770 440 780 320 800 290 C 820 260 840 320 860 380 C 880 440 900 530 930 540 C 950 540 980 540 1050 540 Z"
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <rect width="1200" height="480" fill="url(#grid)"/>
+  <rect width="1200" height="480" fill="url(#glow)"/>
+
+  <!-- Null distribution H0 -->
+  <path d="M 140 400 C 220 400 250 400 280 400 C 360 400 400 380 440 290 C 470 220 490 110 510 90 C 530 110 550 220 580 290 C 620 380 660 400 740 400 C 780 400 820 400 880 400 Z"
         fill="url(#curveA)"/>
-  <path d="M 540 540 C 600 540 620 540 640 540 C 690 540 720 530 750 480 C 770 440 780 320 800 290 C 820 260 840 320 860 380 C 880 440 900 530 930 540 C 950 540 980 540 1050 540"
+  <path d="M 140 400 C 220 400 250 400 280 400 C 360 400 400 380 440 290 C 470 220 490 110 510 90 C 530 110 550 220 580 290 C 620 380 660 400 740 400 C 780 400 820 400 880 400"
         fill="none" stroke="#fb923c" stroke-width="2.5"/>
 
-  <!-- Alternative distribution -->
-  <path d="M 700 540 C 760 540 780 540 800 540 C 850 540 880 530 910 480 C 930 440 940 330 960 300 C 980 270 1000 330 1020 380 C 1040 440 1060 530 1090 540 C 1110 540 1140 540 1170 540 Z"
+  <!-- Alternative H1 (right-shifted, slightly narrower) -->
+  <path d="M 480 400 C 560 400 600 400 640 400 C 720 400 760 380 800 295 C 830 230 850 130 870 110 C 890 130 910 230 940 295 C 980 380 1020 400 1100 400 C 1140 400 1170 400 1180 400 Z"
         fill="url(#curveB)"/>
-  <path d="M 700 540 C 760 540 780 540 800 540 C 850 540 880 530 910 480 C 930 440 940 330 960 300 C 980 270 1000 330 1020 380 C 1040 440 1060 530 1090 540 C 1110 540 1140 540 1170 540"
+  <path d="M 480 400 C 560 400 600 400 640 400 C 720 400 760 380 800 295 C 830 230 850 130 870 110 C 890 130 910 230 940 295 C 980 380 1020 400 1100 400 C 1140 400 1170 400 1180 400"
         fill="none" stroke="#facc15" stroke-width="2.5"/>
 
-  <!-- Threshold line -->
-  <line x1="900" y1="280" x2="900" y2="540" stroke="#fda4af" stroke-width="2" stroke-dasharray="6 6"/>
-  <text x="908" y="295" font-family="Georgia, serif" font-size="20" fill="#fda4af" font-style="italic">α</text>
+  <!-- Rejection region (right tail of H0 past threshold) -->
+  <path d="M 780 400 C 800 400 820 400 860 400 C 720 400 660 400 600 400 C 620 380 645 360 670 320 L 670 400 Z"
+        fill="url(#reject)" opacity="0.0"/>
+  <!-- Better: explicit shaded rejection wedge -->
+  <path d="M 670 400 L 670 320 C 700 360 720 380 740 400 Z" fill="#fda4af" fill-opacity="0.35"/>
+
+  <!-- Threshold line c_alpha -->
+  <line x1="670" y1="80" x2="670" y2="400" stroke="#fda4af" stroke-width="1.8" stroke-dasharray="6 6" stroke-opacity="0.85"/>
 
   <!-- Axis -->
-  <line x1="540" y1="540" x2="1170" y2="540" stroke="#fed7aa" stroke-opacity="0.4" stroke-width="1.5"/>
+  <line x1="140" y1="400" x2="1170" y2="400" stroke="#fed7aa" stroke-opacity="0.35" stroke-width="1.5"/>
 
-  <!-- Symbols -->
-  <text x="60" y="500" font-family="Georgia, serif" font-size="44" fill="#fb923c" opacity="0.55">L(θ; x)</text>
+  <!-- Alpha label -->
+  <text x="685" y="100" font-family="Georgia, serif" font-size="22" fill="#fda4af" fill-opacity="0.9" font-style="italic">α</text>
 
-  <!-- Title -->
-  <text x="60" y="160" font-family="Georgia, serif" font-size="60" font-weight="600" fill="#fff7ed">Statistical Inference</text>
-  <text x="60" y="205" font-family="Georgia, serif" font-size="22" fill="#fb923c" font-style="italic">estimation · hypothesis testing · UMVUE · sufficiency</text>
+  <!-- H0 / H1 labels -->
+  <text x="490" y="80" font-family="Georgia, serif" font-size="20" fill="#fb923c" fill-opacity="0.9" font-style="italic" text-anchor="middle">H₀</text>
+  <text x="870" y="100" font-family="Georgia, serif" font-size="20" fill="#facc15" fill-opacity="0.9" font-style="italic" text-anchor="middle">H₁</text>
+
+  <!-- A few sample dots along baseline (data) -->
+  <g fill="#fed7aa">
+    <circle cx="480" cy="412" r="3" opacity="0.7"/>
+    <circle cx="540" cy="412" r="3" opacity="0.85"/>
+    <circle cx="600" cy="412" r="3" opacity="0.9"/>
+    <circle cx="700" cy="412" r="3" opacity="0.8"/>
+    <circle cx="770" cy="412" r="3" opacity="0.75"/>
+    <circle cx="840" cy="412" r="3" opacity="0.85"/>
+  </g>
 </svg>

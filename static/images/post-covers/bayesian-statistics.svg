@@ -1,46 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0c0a09"/>
-      <stop offset="100%" stop-color="#155e75"/>
+      <stop offset="0%" stop-color="#0c0a1f"/>
+      <stop offset="55%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
     </linearGradient>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
     </pattern>
+    <radialGradient id="glow" cx="0.78" cy="0.4" r="0.4">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="prior" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.55"/>
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#67e8f9" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="post" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#e879f9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="1"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- Prior (wide, flat) -->
-  <path d="M 540 540 C 600 540 620 540 640 540 C 680 535 700 520 720 470 C 740 420 760 360 780 340 C 800 320 820 360 840 420 C 860 470 880 520 920 535 C 940 540 960 540 1170 540 Z"
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <rect width="1200" height="480" fill="url(#grid)"/>
+  <rect width="1200" height="480" fill="url(#glow)"/>
+
+  <!-- Prior (wider, left) -->
+  <path d="M 100 400 C 160 400 180 400 200 400 C 240 395 260 380 290 320 C 320 260 340 200 360 180 C 380 200 400 260 430 320 C 460 380 480 395 520 400 C 540 400 560 400 600 400 Z"
         fill="url(#prior)"/>
-  <path d="M 540 540 C 600 540 620 540 640 540 C 680 535 700 520 720 470 C 740 420 760 360 780 340 C 800 320 820 360 840 420 C 860 470 880 520 920 535 C 940 540 960 540 1170 540"
-        fill="none" stroke="#67e8f9" stroke-width="2" stroke-opacity="0.7"/>
+  <path d="M 100 400 C 160 400 180 400 200 400 C 240 395 260 380 290 320 C 320 260 340 200 360 180 C 380 200 400 260 430 320 C 460 380 480 395 520 400 C 540 400 560 400 600 400"
+        fill="none" stroke="#67e8f9" stroke-width="2.2" stroke-opacity="0.85"/>
 
-  <!-- Posterior (narrower, taller) -->
-  <path d="M 740 540 C 770 540 790 540 810 540 C 840 540 860 530 880 480 C 900 420 920 290 940 250 C 960 290 980 420 1000 480 C 1020 530 1040 540 1060 540 C 1080 540 1100 540 1170 540 Z"
+  <!-- Posterior (narrower, right, taller) -->
+  <path d="M 720 400 C 770 400 790 400 810 400 C 840 400 860 390 880 350 C 900 280 920 130 940 105 C 960 130 980 280 1000 350 C 1020 390 1040 400 1070 400 C 1090 400 1110 400 1170 400 Z"
         fill="url(#post)"/>
-  <path d="M 740 540 C 770 540 790 540 810 540 C 840 540 860 530 880 480 C 900 420 920 290 940 250 C 960 290 980 420 1000 480 C 1020 530 1040 540 1060 540 C 1080 540 1100 540 1170 540"
-        fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+  <path d="M 720 400 C 770 400 790 400 810 400 C 840 400 860 390 880 350 C 900 280 920 130 940 105 C 960 130 980 280 1000 350 C 1020 390 1040 400 1070 400 C 1090 400 1110 400 1170 400"
+        fill="none" stroke="#e879f9" stroke-width="2.6"/>
 
-  <!-- Legend dots -->
-  <circle cx="565" cy="290" r="6" fill="#67e8f9"/>
-  <text x="580" y="296" font-family="Georgia, serif" font-size="18" fill="#67e8f9" fill-opacity="0.9" font-style="italic">π(θ)</text>
-  <circle cx="565" cy="320" r="6" fill="#a78bfa"/>
-  <text x="580" y="326" font-family="Georgia, serif" font-size="18" fill="#a78bfa" fill-opacity="0.95" font-style="italic">π(θ | x)</text>
+  <!-- Flow arrow connecting prior -> posterior -->
+  <path d="M 600 250 C 640 200 660 250 720 240" fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round" marker-end="url(#bayesArrow)"/>
 
-  <!-- Bayes rule -->
-  <text x="60" y="500" font-family="Georgia, serif" font-size="42" fill="#a78bfa" opacity="0.6">π(θ | x) ∝ p(x | θ) π(θ)</text>
+  <!-- Likelihood data points clustered around posterior mode -->
+  <g fill="#fde68a">
+    <circle cx="900" cy="425" r="3" opacity="0.85"/>
+    <circle cx="925" cy="425" r="3.5" opacity="0.95"/>
+    <circle cx="950" cy="425" r="3" opacity="0.9"/>
+    <circle cx="912" cy="438" r="2.5" opacity="0.7"/>
+    <circle cx="940" cy="438" r="3" opacity="0.8"/>
+    <circle cx="958" cy="438" r="2.5" opacity="0.7"/>
+  </g>
 
-  <!-- Title -->
-  <text x="60" y="160" font-family="Georgia, serif" font-size="60" font-weight="600" fill="#ecfeff">Bayesian Statistics</text>
-  <text x="60" y="205" font-family="Georgia, serif" font-size="22" fill="#67e8f9" font-style="italic">priors · posteriors · conjugacy · MCMC · decision theory</text>
+  <!-- Subtle Bayes-rule mark, faint background watermark -->
+  <text x="60" y="445" font-family="Georgia, serif" font-size="34" fill="#c084fc" fill-opacity="0.22" font-style="italic">π(θ | x) ∝ p(x | θ) π(θ)</text>
+
+  <!-- Curve labels -->
+  <text x="360" y="170" font-family="Georgia, serif" font-size="20" fill="#67e8f9" fill-opacity="0.95" font-style="italic" text-anchor="middle">π(θ)</text>
+  <text x="940" y="95" font-family="Georgia, serif" font-size="20" fill="#e879f9" fill-opacity="0.98" font-style="italic" text-anchor="middle">π(θ | x)</text>
+
+  <!-- Axis -->
+  <line x1="100" y1="400" x2="1170" y2="400" stroke="#a78bfa" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <defs>
+    <marker id="bayesArrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e879f9"/>
+    </marker>
+  </defs>
 </svg>
