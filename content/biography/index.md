@@ -14,18 +14,19 @@ Beyond research, I care about making the methods usable. My three publications e
 
 
 ### Key Words
-* High-dimensional data
-* Combinatorial problems
+* High-dimensional Bayesian inference
+* Combinatorial / structured data
 * Posterior consistency
+* MCMC convergence theory
 
 
 ### Research Interests
 
-* Bayesian Nonparametrics
-* Graph-model Based Clustering
-* Bayesian Asymptotic Analysis
-* Combinatorial Data Analysis
-* (Mixed) Integer Programming
+* Bayesian computation and data augmentation
+* Graphical models and clustering consistency
+* Combinatorial response modeling
+* Random spanning trees and perfect simulation
+* (Mixed) integer programming for inference
 
 ### Education
 
