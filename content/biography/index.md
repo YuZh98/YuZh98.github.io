@@ -13,20 +13,13 @@ What draws me to this work is the interplay between mathematical structure and m
 Beyond research, I care about making the methods usable. My three publications each ship with reproducibility code, and I maintain open-source tools including [`latex2arxiv`](https://github.com/YuZh98/latex2arxiv), a LaTeX-to-arXiv pipeline distributed as a PyPI package, a GitHub Action, and an MCP server. Writing the package usually teaches me what the paper actually claims.
 
 
-### Key Words
-* High-dimensional Bayesian inference
-* Combinatorial / structured data
-* Posterior consistency
-* MCMC convergence theory
-
-
 ### Research Interests
 
-* Bayesian computation and data augmentation
-* Graphical models and clustering consistency
-* Combinatorial response modeling
-* Random spanning trees and perfect simulation
-* (Mixed) integer programming for inference
+* Bayesian asymptotics
+* Model-based clustering
+* Markov chain Monte Carlo (MCMC)
+* Combinatorial and structured data analysis
+* Nonparametric Bayesian methods
 
 ### Education
 

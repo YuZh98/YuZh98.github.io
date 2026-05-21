@@ -3,8 +3,7 @@ title = 'latex2arxiv'
 date = 2026-05-20T12:00:00-04:00
 draft = false
 description = 'Submit to arXiv without the headache. CLI + MCP server + GitHub Action + VS Code extension for cleaning a LaTeX project into an arXiv-ready zip, with pre-flight checks and an upload guide.'
-featuredImage = "/images/post-covers/latex2arxiv.svg"
-featuredImagePreview = "/images/post-covers/latex2arxiv.svg"
+
 +++
 
 > Open-source · [github.com/YuZh98/latex2arxiv](https://github.com/YuZh98/latex2arxiv)
