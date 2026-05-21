@@ -1,0 +1,25 @@
+{{- define "title" }}
+    {{- .Title }} - {{ .Site.Title -}}
+{{- end -}}
+
+{{- define "content" -}}
+    <div class="page home">
+        <div class="single">
+            <h1 class="single-title animate__animated animate__pulse animate__faster">{{ .Title | emojify }}</h1>
+            {{- with .Content -}}
+                <div class="content" id="content">{{ . }}</div>
+            {{- end -}}
+        </div>
+
+        {{- if .Pages -}}
+            {{- $paginated := .Pages -}}
+            {{- with .Site.Params.section.paginate | default .Site.Params.paginate -}}
+                {{- $paginated = ($.Paginate $.Pages .).Pages -}}
+            {{- end -}}
+            {{- range $paginated -}}
+                {{- .Render "summary" -}}
+            {{- end -}}
+            {{- partial "paginator.html" . -}}
+        {{- end -}}
+    </div>
+{{- end -}}
