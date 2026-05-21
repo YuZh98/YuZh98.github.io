@@ -3,8 +3,6 @@ title = 'Advanced Probability Theory'
 date = 2023-10-28T21:53:01-04:00
 draft = false
 description = 'My notes for Advanced Probability Theory in 2018 Fall at USTC'
-featuredImage = "/images/post-covers/advanced-probability.svg"
-featuredImagePreview = "/images/post-covers/advanced-probability.svg"
 +++
 
 <!--more-->

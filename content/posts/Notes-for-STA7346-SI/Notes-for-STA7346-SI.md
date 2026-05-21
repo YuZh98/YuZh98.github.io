@@ -3,8 +3,6 @@ title = 'STA7346: Statistical Inference'
 date = 2023-10-21T23:51:47-04:00
 draft = false
 description = 'My notes for Statistical Inference in 2022 Fall at UF'
-featuredImage = "/images/post-covers/statistical-inference.svg"
-featuredImagePreview = "/images/post-covers/statistical-inference.svg"
 +++
 
 <!--more--> 

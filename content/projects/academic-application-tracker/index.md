@@ -3,8 +3,6 @@ title = 'Academic Application Tracker'
 date = 2026-05-20T12:00:00-04:00
 draft = false
 description = 'Local Streamlit dashboard that answers "what do I do today?" — tracks postdoc, PhD, faculty, and fellowship applications: deadlines, recommenders, materials, interview rounds.'
-featuredImage = "/images/post-covers/academic-tracker.svg"
-featuredImagePreview = "/images/post-covers/academic-tracker.svg"
 +++
 
 > Open-source · [github.com/YuZh98/academic-application-tracker](https://github.com/YuZh98/academic-application-tracker)
