@@ -12,9 +12,9 @@
         </div>
 
         {{- if .Pages -}}
-            {{- $paginated := .Pages -}}
+            {{- $paginated := .Pages.ByWeight -}}
             {{- with .Site.Params.section.paginate | default .Site.Params.paginate -}}
-                {{- $paginated = ($.Paginate $.Pages .).Pages -}}
+                {{- $paginated = ($.Paginate ($.Pages.ByWeight) .).Pages -}}
             {{- end -}}
             {{- range $paginated -}}
                 {{- .Render "summary" -}}

@@ -2,37 +2,47 @@
 title = 'latex2arxiv'
 date = 2026-05-20T12:00:00-04:00
 draft = false
-description = 'Submit to arXiv without the headache. CLI + MCP server + GitHub Action + VS Code extension for cleaning a LaTeX project into an arXiv-ready zip, with pre-flight checks and an upload guide.'
+weight = 1
+description = 'Submit to arXiv without the headache. CLI + Chrome extension + MCP server + GitHub Action + VS Code extension for cleaning a LaTeX project into an arXiv-ready zip, with pre-flight checks and an upload guide.'
 
 +++
 
 > Open-source · [github.com/YuZh98/latex2arxiv](https://github.com/YuZh98/latex2arxiv)
 
 [![PyPI](https://img.shields.io/pypi/v/latex2arxiv.svg)](https://pypi.org/project/latex2arxiv/)
-[![Downloads](https://img.shields.io/pypi/dm/latex2arxiv.svg)](https://pypi.org/project/latex2arxiv/)
+[![Downloads](https://static.pepy.tech/badge/latex2arxiv)](https://pepy.tech/project/latex2arxiv)
 [![Tests](https://github.com/YuZh98/latex2arxiv/actions/workflows/test.yml/badge.svg)](https://github.com/YuZh98/latex2arxiv/actions/workflows/test.yml)
-[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/YuZh98/latex2arxiv/blob/main/LICENSE)
+[![Homebrew](https://img.shields.io/badge/homebrew-tap-orange?logo=homebrew&logoColor=white)](https://github.com/YuZh98/homebrew-latex2arxiv)
+[![VS Code](https://vsmarketplacebadges.dev/version-short/YuZh98.latex2arxiv.svg?label=VS%20Code&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=YuZh98.latex2arxiv)
+[![MCP](https://img.shields.io/badge/MCP-server-8A2BE2)](https://github.com/YuZh98/latex2arxiv/blob/main/docs/mcp.md)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/oeaoajmhcmlgdbeacnpkcofodekkpeab?label=Chrome&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab)
 
 **Submit to arXiv without the headache. One command cleans your project, catches rejection-causing errors, and walks you through the upload.**
 
-```bash
-latex2arxiv paper.zip --compile          # clean + verify PDF
-latex2arxiv paper.zip --compile --guide  # + step-by-step upload instructions
-latex2arxiv paper/ --compile             # directory input
-latex2arxiv https://github.com/u/p.git   # git URL input
-```
+## Who is this for?
 
-> Your original project is never modified. All output goes to a new `_arxiv.zip` file.
+**You write in Overleaf and you're heading to arXiv.** Two ways in:
 
-Try the built-in demo:
+- **No install — clean it in the browser.** The [Chrome extension](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab) adds a "Clean for arXiv" button right inside the Overleaf editor. Your project never leaves your browser.
+- **Comfortable in a terminal?** `pip install latex2arxiv` — one command cleans, checks, and packages your paper.
 
-```bash
-pip install latex2arxiv
-latex2arxiv --demo --compile --guide
-```
+**First time submitting to arXiv?** Your paper compiles fine locally, yet arXiv can still reject it for reasons nobody warned you about — shell-escape packages, a missing `.bbl`, oversized figures. latex2arxiv catches those *before* you upload and writes a copy-paste-ready walkthrough of the submission form.
 
-This processes a bundled self-documenting paper, opens the cleaned PDF, and writes a step-by-step arXiv upload guide with copy-paste-ready metadata. The cleaned demo's PDF is attached to every [GitHub Release](https://github.com/YuZh98/latex2arxiv/releases/latest) as `demo_project_arxiv.pdf`.
+> Your original project is never modified — all output goes to a new `_arxiv.zip`.
+
+## Quickstart — Overleaf to arXiv in 3 steps
+
+1. **In Overleaf:** **Menu → Download → Source** saves `my_project.zip`.
+2. **Clean and verify:**
+   ```bash
+   pip install latex2arxiv
+   latex2arxiv my_project.zip --compile --guide
+   ```
+3. **Upload:** a new `my_project_arxiv.zip` appears next to the input — upload it at [arxiv.org/submit](https://arxiv.org/submit). The `--guide` text file walks you through every field on the form.
+
+New to the terminal? The [step-by-step Overleaf → arXiv guide](https://github.com/YuZh98/latex2arxiv/blob/main/docs/overleaf.md) covers opening a terminal, `PATH` fixes, and git-synced projects. Prefer zero install? The [Chrome extension](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab) does the same from inside Overleaf. Want to see it work first? Try the built-in demo — no file needed: `latex2arxiv --demo --compile --guide`.
+
+**Also useful for:** gating a paper repo in CI (`latex2arxiv paper.zip --dry-run` exits non-zero on errors) and stripping revision markup like `\added{}` / `\textcolor{red}{}` ([custom rules →](#custom-removal-rules---config)).
 
 ## Before / After
 
@@ -54,25 +64,15 @@ On a real statistics paper ([arXiv:2504.11630](https://arxiv.org/abs/2504.11630)
 | ... (and ~930 more) | |
 | **934 files, 80.6 MB** | **40 files, 3.1 MB** |
 
-## Who is this for?
-
-**You've never submitted to arXiv before.** Your project compiles locally. arXiv might still reject it for reasons nobody warned you about. `latex2arxiv paper.zip --compile --guide` flags the rejection-causing issues and writes you a copy-paste-ready upload walkthrough.
-
-**You wrote it in Overleaf.** Overleaf gave you hundreds of files and messy tex files. You need to tidy up everything safely.  [Overleaf → arXiv quickstart →](https://github.com/YuZh98/latex2arxiv/blob/main/docs/overleaf.md)
-
-**You're CI-gating a paper repo.** `latex2arxiv paper.zip --dry-run` exits non-zero on rejection-causing errors. Drop it into your build matrix.
-
-**Your paper has revision tracking.** `\added{}`, `\deleted{}`, `\textcolor{red}{}` — gone, no manual cleanup. [Custom removal rules →](#custom-removal-rules---config)
-
 ## What it does
 
-| Feature | What it does |
-|---|---|
-| 📦 **One command, any input** | Accepts a `.zip`, directory, or git URL; outputs an arXiv-ready `.zip`; optionally compiles and opens the PDF for review |
-| ✂️ **Prunes your project to submission-ready** | Keeps only files reachable from your main `.tex`; removes build artifacts, editor files, cover letters, unused figures |
-| 🧹 **Cleans your `.tex`** | Strips comments, removes `\todo{}` / `\hl{}` / draft packages, handles nested braces correctly (`\deleted{see \cite{x}}` works) |
-| 🚨 **Catches submission blockers before you upload** | `[error]` for shell-escape packages that will fail on arXiv (`minted`, `pythontex`); `[warn]` for biblatex without `.bbl`, missing index files, oversized output, undefined citations, problematic filenames — [full list](#pre-flight-checks) |
-| 🗺️ **Guides you through upload** | `--guide` extracts title, authors, abstract, page/figure/table counts and writes a step-by-step arXiv upload walkthrough |
+|| Feature | What it does |
+|---|---|---|
+| 📦 | **One command, any input** | Accepts a `.zip`, directory, or git URL; outputs an arXiv-ready `.zip`; optionally compiles and opens the PDF for review |
+| ✂️ | **Prunes your project to submission-ready** | Keeps only files reachable from your main `.tex`; removes build artifacts, editor files, cover letters, unused figures |
+| 🧹 | **Cleans your `.tex`** | Strips comments, removes `\todo{}` / `\hl{}` / draft packages, handles nested braces correctly (`\deleted{see \cite{x}}` works) |
+| 🚨 | **Catches submission blockers before you upload** | `[error]` for shell-escape packages that will fail on arXiv (`minted`, `pythontex`); `[warn]` for biblatex without `.bbl`, missing index files, oversized output, undefined citations, problematic filenames — [full list](#pre-flight-checks) |
+| 🗺️ | **Guides you through upload** | `--guide` extracts title, authors, abstract, page/figure/table counts and writes a step-by-step arXiv upload walkthrough |
 
 Also: `--flatten` (single-file output, [docs](https://github.com/YuZh98/latex2arxiv/blob/main/docs/flatten.md)), `--json` (CI integration, [schema](https://github.com/YuZh98/latex2arxiv/blob/main/docs/json-schema.md)), `--resize` (image downscaling), `--dry-run` (preview without writing), BibTeX normalization, `\pdfoutput=1` injection.
 
@@ -117,29 +117,37 @@ Pass `--guide` and latex2arxiv writes a plain-text file alongside your output zi
 
 No more guessing what goes where.
 
-## Works everywhere
+## Same engine, five surfaces
 
-**Terminal** — one command, full pipeline:
+The same Python pipeline runs in all five. Pick what fits.
 
-```bash
-latex2arxiv paper.zip --compile --guide
-```
+### Terminal — `latex2arxiv`
+Full flag surface, fastest path. `latex2arxiv paper.zip --compile --guide`. Installs via `pip` or `brew` ([details below](#installation)).
 
-**CI** — gate your paper repo on arXiv compliance:
+### Chrome extension — Overleaf
+"Clean for arXiv" button inside the editor. Runs in an offscreen Pyodide worker; project bytes never leave your browser. Get it on the [Chrome Web Store](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab). Source: [`browser-extension/`](https://github.com/YuZh98/latex2arxiv/tree/main/browser-extension).
 
-```yaml
-- run: pip install latex2arxiv && latex2arxiv paper.zip --dry-run
-```
+| Validate | Clean for arXiv | Collapse |
+|---|---|---|
+| ![Validate run listing arXiv diagnostics](https://raw.githubusercontent.com/YuZh98/latex2arxiv/main/browser-extension/screenshots/cws/setup1-1280.png) | ![Clean run with the upload guide ready](https://raw.githubusercontent.com/YuZh98/latex2arxiv/main/browser-extension/screenshots/cws/setup2-1280.png) | ![Panel collapsed to a pill on the editor edge](https://raw.githubusercontent.com/YuZh98/latex2arxiv/main/browser-extension/screenshots/cws/setup3-1280.png) |
 
-**AI agents** — Claude, Cursor, or Copilot validate and fix issues in conversation:
-
+### MCP — Claude, Cursor, Copilot, Windsurf, Zed
 ```bash
 pip install "latex2arxiv[mcp]"
 ```
-
 ```json
 {"mcpServers": {"latex2arxiv": {"command": "latex2arxiv-mcp"}}}
 ```
+Per-editor paths: [docs/mcp.md](https://github.com/YuZh98/latex2arxiv/blob/main/docs/mcp.md).
+
+### GitHub Action — CI gate
+```yaml
+- run: pip install latex2arxiv && latex2arxiv paper.zip --dry-run
+```
+Fails the build on `[error]` issues. Also ships as a [`pre-commit` hook](https://github.com/YuZh98/latex2arxiv/blob/main/docs/ci.md) (`latex2arxiv-dryrun`).
+
+### VS Code
+[`ext install YuZh98.latex2arxiv`](https://marketplace.visualstudio.com/items?itemName=YuZh98.latex2arxiv). Status-bar action on the active `.tex` file.
 
 ## Installation
 
@@ -192,6 +200,7 @@ latex2arxiv input [output.zip] [options]
 | `--flatten` | Inline every `\input` / `\include` / `\subfile` into the main `.tex` for single-file output. [Details](https://github.com/YuZh98/latex2arxiv/blob/main/docs/flatten.md). |
 | `--json` | Emit a machine-readable JSON summary on stdout; route progress to stderr. [Schema](https://github.com/YuZh98/latex2arxiv/blob/main/docs/json-schema.md). |
 | `--demo` | Run the built-in demo project (no input file needed). |
+| `--clean-demo` | Remove demo output files (`demo_project_arxiv*`). |
 | `--version` | Print version and exit. |
 
 **Examples**
@@ -257,57 +266,9 @@ replacements:
 
 The brace-balanced matcher correctly handles nested commands like `\deleted{see \cite{x}}`. Unknown top-level keys warn — typos like `command_to_delete` (singular) no longer silently no-op.
 
-## `latex2arxiv` vs. `arxiv_latex_cleaner`
+## Image size reduction
 
-[`arxiv_latex_cleaner`](https://github.com/google-research/arxiv-latex-cleaner) is the incumbent — Google-backed, mature, cleans well. Here's how the two compare on the things that change your workflow.
-
-### What only `latex2arxiv` does
-
-| | `latex2arxiv` | `arxiv_latex_cleaner` |
-|---|---|---|
-| **Pre-flight `[error]` / `[warn]`** ([details](#pre-flight-checks)) | ✅ | ❌ |
-| **Upload walkthrough** (`--guide`) | ✅ | ❌ |
-| **Non-zero exit on errors** (CI-gateable) | ✅ | ❌ |
-| **Outputs the `.zip` you upload** | ✅ | ❌ |
-| **MCP server** (Claude / Cursor / Copilot) | ✅ | ❌ |
-| **GitHub Action + `pre-commit` hook** | ✅ | ❌ |
-| **VS Code extension** | ✅ | ❌ |
-| **Multiple input forms** (`.zip` / directory / git URL) | ✅ | ❌ |
-| `--compile` preview | ✅ | ❌ |
-| `--dry-run` | ✅ | ❌ |
-| `--demo` | ✅ | ❌ |
-| Auto-detect main `.tex` | ✅ | ❌ |
-| Brace-balanced config | ✅ | ❌ |
-
-### What only `arxiv_latex_cleaner` does
-
-| | `latex2arxiv` | `arxiv_latex_cleaner` |
-|---|---|---|
-| PDF compression (Ghostscript) | ❌ | ✅ |
-| PNG → JPG conversion | ❌ | ✅ |
-
-If you need image transcoding for size, run `arxiv_latex_cleaner` first, or use `latex2arxiv --resize PX`.
-
-### Both do
-
-BibTeX normalization · image resizing (Pillow).
-
-### Maturity
-
-| | `latex2arxiv` | `arxiv_latex_cleaner` |
-|---|---|---|
-|  | v1.0 production-stable · 380 tests · Python 3.10–3.13 matrix · live `pdflatex`+`biber` end-to-end CI · 10 regression fixtures | ~5k★, years in production |
-
-## Integrations
-
-| Surface | Status | Details |
-|---|---|---|
-| CLI | ✅ | `pip install latex2arxiv` |
-| GitHub Action | ✅ | [`action.yml`](https://github.com/YuZh98/latex2arxiv/blob/main/docs/ci.md) |
-| `pre-commit` hook | ✅ | [`latex2arxiv-dryrun`](https://github.com/YuZh98/latex2arxiv/blob/main/docs/ci.md) |
-| MCP server (AI agents) | ✅ | `pip install "latex2arxiv[mcp]"` — [setup](https://github.com/YuZh98/latex2arxiv/blob/main/docs/mcp.md) |
-| VS Code extension | ✅ | [Marketplace](https://marketplace.visualstudio.com/items?itemName=YuZh98.latex2arxiv) — `ext install YuZh98.latex2arxiv` |
-| Homebrew formula | ✅ | `brew tap YuZh98/latex2arxiv && brew install latex2arxiv` |
+latex2arxiv covers cleaning, pre-flight validation, and producing the upload-ready `.zip`. For aggressive image transcoding it pairs cleanly with [`arxiv_latex_cleaner`](https://github.com/google-research/arxiv-latex-cleaner), which adds PDF compression (Ghostscript) and PNG → JPG conversion — run it first, then latex2arxiv. Or stay in one tool with the built-in `latex2arxiv --resize PX`.
 
 ## Known limitations
 
