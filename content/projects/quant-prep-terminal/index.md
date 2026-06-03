@@ -38,7 +38,7 @@ Eleven domains — calculus, linear algebra, geometry, probability distributions
 ![Flashcards](https://raw.githubusercontent.com/YuZh98/quant-prep-terminal/main/docs/03-flashcards.png)
 
 ### Lab
-Build an option payoff leg by leg — Black–Scholes-priced, with a live breakeven, max profit and loss, and a P&L crosshair that follows your cursor. Or open the Python sandbox and run a real simulation in the browser (powered by Pyodide) to settle a probability question empirically instead of arguing about it.
+A tabbed workbench of five tools. **Payoff explorer** — build an option position leg by leg, Black–Scholes-priced, with live breakeven, max profit/loss, and a P&L crosshair. **Distribution explorer** — seven distributions (normal, lognormal, exponential, uniform, Poisson, binomial, Student-t) with live density/PMF plots and analytic moments. **Market maker** — a dice market-making game pitting your bid/ask against informed and noise flow, scored over rounds. **Regression simulator** — set a true line, add noise, and watch ordinary least squares recover it with R² and residual diagnostics. **Python sandbox** — run a real simulation in the browser (Pyodide) to settle a probability question empirically.
 
 ![Lab — payoff explorer](https://raw.githubusercontent.com/YuZh98/quant-prep-terminal/main/docs/04-lab.png)
 
