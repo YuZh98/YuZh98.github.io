@@ -64,6 +64,8 @@ The built-in **Workshop** lets you extend the terminal without touching code:
 
 Want to reskin it or rebuild it entirely? It's one readable HTML file — fork it, edit `index.html`, and go.
 
+Prefer to start from nothing? A [**fresh-start build**](https://yuzh98.github.io/quant-prep-terminal/blank.html) ships with zero seed content — same terminal and lab, an empty deck and no cheatsheets, ready for your own bank. It's generated from `index.html` by a small build script, so it never drifts from the main app.
+
 ---
 
 ## How it works
