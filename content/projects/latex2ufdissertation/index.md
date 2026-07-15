@@ -3,6 +3,7 @@ title = 'latex2ufdissertation'
 date = 2026-05-20T12:00:00-04:00
 draft = false
 weight = 5
+group = "writing"
 description = 'A safety-net validator for UF doctoral dissertations. Produces a severity-tiered report citing the originating UF rule for each finding.'
 
 +++

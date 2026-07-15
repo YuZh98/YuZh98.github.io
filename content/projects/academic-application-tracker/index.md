@@ -3,6 +3,7 @@ title = 'Academic Application Tracker'
 date = 2026-05-20T12:00:00-04:00
 draft = false
 weight = 6
+group = "apps"
 description = 'Local Streamlit dashboard that answers "what do I do today?" — tracks postdoc, PhD, faculty, and fellowship applications: deadlines, recommenders, materials, interview rounds.'
 
 +++

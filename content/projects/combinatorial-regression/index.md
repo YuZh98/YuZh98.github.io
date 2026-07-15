@@ -3,6 +3,7 @@ title = 'Combinatorial Regression'
 date = 2026-05-20T12:00:00-04:00
 draft = false
 weight = 4
+group = "research"
 description = 'Reproducibility code for "Statistical Modeling for Combinatorial Response Data" — MH-within-Gibbs sampler, kernel comparison, and waterfowl data analysis.'
 
 +++

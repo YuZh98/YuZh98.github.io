@@ -3,6 +3,7 @@ title = 'RecVAE — Recurrent 3D-Conv VAE for fMRI'
 date = 2026-05-20T12:00:00-04:00
 draft = false
 weight = 2
+group = "research"
 description = 'A PyTorch reference implementation plus an 18-lesson tutorial series for modelling temporal fMRI data with deep variational autoencoders.'
 
 +++
