@@ -18,4 +18,4 @@ It is maintained by Jong Hee Park, Michela Cameletti, Xun Pang, and Kevin M. Qui
 
 ---
 
-**Disclaimer.** This recommendation is shared for **study and reference purposes only**. I am not affiliated with CRAN, the R Project, or the maintainers of the Task View or any package listed, and this is not an endorsement or professional advice. Please refer to each package's own documentation and license for authoritative and up-to-date information.
+**Disclaimer.** This recommendation is shared for **study and reference purposes only**.
