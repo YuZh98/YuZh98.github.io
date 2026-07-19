@@ -10,13 +10,9 @@ draft = false
 
 ### Manuscripts Under Review
 
-**Yu Zheng**, Malay Ghosh, and Leo L. Duan. Statistical Modeling of Combinatorial Response Data. [arXiv:2504.11630](https://arxiv.org/abs/2504.11630). *Journal of the American Statistical Association*, revision submitted.
+**Yu Zheng**, Malay Ghosh, and Leo L. Duan. Statistical Modeling of Combinatorial Response Data. [arXiv:2504.11630](https://arxiv.org/abs/2504.11630). *Journal of the American Statistical Association*, minor revision submitted.
 
 **Yu Zheng**, Leo L. Duan, and Arkaprava Roy. Consistency of Graphical Model-based Clustering: Robust Clustering using Bayesian Spanning Forest. [arXiv:2409.19129](https://arxiv.org/abs/2409.19129). *Bernoulli*, revision submitted.
-
-### In Preparation
-
-**Yu Zheng** and Leo L. Duan. Extended Aldous–Broder theorem. *Draft forthcoming.*
 
 ### Contributed Talks
 

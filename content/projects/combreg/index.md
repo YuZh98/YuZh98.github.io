@@ -4,7 +4,7 @@ date = 2026-07-19T00:01:00-04:00
 draft = false
 weight = 3
 group = "research"
-description = 'R package implementing the MH-within-Gibbs sampler from "Statistical Modeling of Combinatorial Response Data" — C++-accelerated, with a probit baseline, benchmarking, and diagnostics, so other researchers can use the method directly. Not yet on CRAN.'
+description = 'R package implementing the MH-within-Gibbs sampler from "Statistical Modeling of Combinatorial Response Data"'
 
 +++
 
@@ -14,7 +14,7 @@ description = 'R package implementing the MH-within-Gibbs sampler from "Statisti
 [![R-CMD-check](https://github.com/YuZh98/combreg/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/YuZh98/combreg/actions/workflows/R-CMD-check.yaml)
 [![R ≥ 4.0](https://img.shields.io/badge/R-≥4.0-blue)](https://www.r-project.org/)
 
-An R package for Bayesian regression on combinatorial response data: responses are binary vectors constrained to an integral polyhedron $\lbrace y \in \lbrace 0,1\rbrace^d : Ay \le b \rbrace$. It packages the Metropolis–Hastings-within-Gibbs sampler with dual-certificate augmentation from [*Statistical Modeling of Combinatorial Response Data*](https://arxiv.org/abs/2504.11630) — the same method as the paper's [reproducibility code](/projects/combinatorial-regression/) — so other researchers can use it directly, with hit-and-run dual updates in C++ (OpenMP-parallel across observations), an unconstrained probit baseline, one-call benchmarking, MCMC/regression diagnostics, and utilities for constraint validation and data simulation.
+An R package for Bayesian regression on combinatorial response data: responses are binary vectors constrained to an integral polyhedron $\lbrace y \in \lbrace 0,1\rbrace^d : Ay \le b \rbrace$. It packages the Metropolis–Hastings-within-Gibbs sampler with dual-certificate augmentation from [*Statistical Modeling of Combinatorial Response Data*](https://arxiv.org/abs/2504.11630), the same method as the paper's [reproducibility code](/projects/combinatorial-regression/). 
 
 Not yet on CRAN.
 
