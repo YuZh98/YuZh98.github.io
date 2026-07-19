@@ -2,7 +2,7 @@
 title = 'Anti-correlation Gaussian Data Augmentation'
 date = 2026-05-20T12:00:00-04:00
 draft = false
-weight = 3
+weight = 4
 group = "research"
 description = 'Code for the paper "Gibbs Sampling using Anti-correlation Gaussian Data Augmentation, with Applications to L1-ball-type Models".'
 

@@ -2,9 +2,9 @@
 title = 'Combinatorial Regression'
 date = 2026-05-20T12:00:00-04:00
 draft = false
-weight = 4
+weight = 2
 group = "research"
-description = 'Reproducibility code for "Statistical Modeling for Combinatorial Response Data" — MH-within-Gibbs sampler, kernel comparison, and waterfowl data analysis.'
+description = 'Reproducibility code for "Statistical Modeling for Combinatorial Response Data", including MH-within-Gibbs sampler, pseudo-marginal MH sampler, and HMC-NUTS sampler for Bayesian regression for responses that are integer-valued vectors subject to pre-determined constraints.'
 
 +++
 

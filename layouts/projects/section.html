@@ -3,53 +3,25 @@
 {{- end -}}
 
 {{- define "content" -}}
-    <div class="page home">
-        <div class="single">
-            <h1 class="single-title animate__animated animate__pulse animate__faster">{{ .Title | emojify }}</h1>
-            {{- with .Content -}}
-                <div class="content" id="content">{{ . }}</div>
+    <div class="page single special">
+        <h1 class="single-title animate__animated animate__pulse animate__faster">{{ .Title | emojify }}</h1>
+
+        <div class="content" id="content">
+            {{- with .Content }}{{ . }}{{ end -}}
+
+            {{- $pages := .Pages -}}
+            {{- range .Params.groups -}}
+                {{- $title := .title -}}
+                {{- $blurb := .blurb -}}
+                {{- $inGroup := (where $pages "Params.group" .key).ByWeight -}}
+                {{- with $inGroup -}}
+                    <h3 id="{{ $title | anchorize }}">{{ $title }}</h3>
+                    {{- with $blurb }}<p>{{ . }}</p>{{ end -}}
+                    {{- range . -}}
+                        <p><strong><a href="{{ .RelPermalink }}">{{ .Title | emojify }}</a></strong>{{ with .Description }} — {{ . }}{{ end }} <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a></p>
+                    {{- end -}}
+                {{- end -}}
             {{- end -}}
         </div>
-
-        {{- $pages := .Pages -}}
-        {{- range .Params.groups -}}
-            {{- $title := .title -}}
-            {{- $blurb := .blurb -}}
-            {{- $inGroup := (where $pages "Params.group" .key).ByWeight -}}
-            {{- with $inGroup -}}
-                <section class="project-group">
-                    <h2 class="project-group-title">{{ $title }}</h2>
-                    {{- with $blurb }}<p class="project-group-blurb">{{ . }}</p>{{ end -}}
-                    {{- range . -}}
-                        <article class="project-card">
-                            <h3 class="project-card-title">
-                                <a href="{{ .RelPermalink }}">{{ .Title | emojify }}</a>
-                            </h3>
-                            {{- with .Description }}<p class="project-card-desc">{{ . }}</p>{{ end -}}
-                            <a class="project-card-more" href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
-                        </article>
-                    {{- end -}}
-                </section>
-            {{- end -}}
-        {{- end -}}
     </div>
-
-    <style>
-        .project-group { margin: 2.5rem 0; }
-        .project-group-title {
-            margin: 0 0 .3rem;
-            padding-bottom: .3rem;
-            border-bottom: 1px solid var(--global-border-color, rgba(128,128,128,.25));
-            font-size: 1.5rem;
-        }
-        .project-group-blurb {
-            margin: 0 0 1.4rem;
-            color: var(--global-font-secondary-color, #7f8288);
-            font-size: .95rem;
-        }
-        .project-card { margin: 0 0 1.3rem; }
-        .project-card-title { margin: 0 0 .25rem; font-size: 1.15rem; }
-        .project-card-desc { margin: 0 0 .3rem; line-height: 1.55; }
-        .project-card-more { font-size: .9rem; }
-    </style>
 {{- end -}}
