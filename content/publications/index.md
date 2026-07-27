@@ -8,9 +8,11 @@ draft = false
 
 **Yu Zheng** and Leo L. Duan. (2025). Gibbs Sampling using Anti-correlation Gaussian Data Augmentation, with Applications to L1-ball-type Models. [*Journal of Computational and Graphical Statistics*](https://www.tandfonline.com/doi/full/10.1080/10618600.2025.2473932), 34(4), 1601–1611. [arXiv:2309.09371](https://arxiv.org/abs/2309.09371).
 
-### Manuscripts Under Review
+### Accepted for Publication
 
-**Yu Zheng**, Malay Ghosh, and Leo L. Duan. Statistical Modeling of Combinatorial Response Data. [arXiv:2504.11630](https://arxiv.org/abs/2504.11630). *Journal of the American Statistical Association*, minor revision submitted.
+**Yu Zheng**, Malay Ghosh, and Leo L. Duan. Statistical Modeling of Combinatorial Response Data. [arXiv:2504.11630](https://arxiv.org/abs/2504.11630). *Journal of the American Statistical Association*, accepted, forthcoming.
+
+### Manuscripts Under Review
 
 **Yu Zheng**, Leo L. Duan, and Arkaprava Roy. Consistency of Graphical Model-based Clustering: Robust Clustering using Bayesian Spanning Forest. [arXiv:2409.19129](https://arxiv.org/abs/2409.19129). *Bernoulli*, revision submitted.
 
