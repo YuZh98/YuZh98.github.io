@@ -14,6 +14,7 @@ description = 'R package implementing the MH-within-Gibbs sampler from "Statisti
 # combreg
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/combreg)](https://CRAN.R-project.org/package=combreg)
 [![R-CMD-check](https://github.com/YuZh98/combreg/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/YuZh98/combreg/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -29,7 +30,13 @@ dual updates in C++ (OpenMP-parallel across observations), an unconstrained prob
 
 ## Installation
 
-Install the development version from GitHub:
+Install the released version from [CRAN](https://CRAN.R-project.org/package=combreg):
+
+```r
+install.packages("combreg")
+```
+
+Or the development version from GitHub:
 
 ```r
 # install.packages("remotes")
