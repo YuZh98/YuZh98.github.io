@@ -19,7 +19,7 @@ A safety-net validator for UF doctoral dissertations using the Fall 2025+ Univer
 ## Install
 
 ```bash
-pip install "git+https://github.com/YuZh98/latex2ufdissertation.git@v0.2.0"
+pip install "git+https://github.com/YuZh98/latex2ufdissertation.git@v0.5.0"
 ```
 
 Requires Python 3.10+ and (for the compile path) LuaLaTeX with TeX Live 2025.

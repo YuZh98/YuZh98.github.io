@@ -15,7 +15,7 @@ description = 'Submit to arXiv without the headache. CLI + Chrome extension + MC
 [![Tests](https://github.com/YuZh98/latex2arxiv/actions/workflows/test.yml/badge.svg)](https://github.com/YuZh98/latex2arxiv/actions/workflows/test.yml)
 [![Homebrew](https://img.shields.io/badge/homebrew-tap-orange?logo=homebrew&logoColor=white)](https://github.com/YuZh98/homebrew-latex2arxiv)
 [![VS Code](https://vsmarketplacebadges.dev/version-short/YuZh98.latex2arxiv.svg?label=VS%20Code&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=YuZh98.latex2arxiv)
-[![MCP](https://img.shields.io/badge/MCP-server-8A2BE2)](https://github.com/YuZh98/latex2arxiv/blob/main/docs/mcp.md)
+[![MCP](https://img.shields.io/badge/MCP-server-8A2BE2)](https://github.com/YuZh98/latex2arxiv/blob/main/materials/mcp.md)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/oeaoajmhcmlgdbeacnpkcofodekkpeab?label=Chrome&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab)
 
 **Submit to arXiv without the headache. One command cleans your project, catches rejection-causing errors, and walks you through the upload.**
@@ -41,7 +41,7 @@ description = 'Submit to arXiv without the headache. CLI + Chrome extension + MC
    ```
 3. **Upload:** a new `my_project_arxiv.zip` appears next to the input — upload it at [arxiv.org/submit](https://arxiv.org/submit). The `--guide` text file walks you through every field on the form.
 
-New to the terminal? The [step-by-step Overleaf → arXiv guide](https://github.com/YuZh98/latex2arxiv/blob/main/docs/overleaf.md) covers opening a terminal, `PATH` fixes, and git-synced projects. Prefer zero install? The [Chrome extension](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab) does the same from inside Overleaf. Want to see it work first? Try the built-in demo — no file needed: `latex2arxiv --demo --compile --guide`.
+New to the terminal? The [step-by-step Overleaf → arXiv guide](https://github.com/YuZh98/latex2arxiv/blob/main/materials/overleaf.md) covers opening a terminal, `PATH` fixes, and git-synced projects. Prefer zero install? The [Chrome extension](https://chromewebstore.google.com/detail/latex2arxiv-for-overleaf/oeaoajmhcmlgdbeacnpkcofodekkpeab) does the same from inside Overleaf. Want to see it work first? Try the built-in demo — no file needed: `latex2arxiv --demo --compile --guide`.
 
 **Also useful for:** gating a paper repo in CI (`latex2arxiv paper.zip --dry-run` exits non-zero on errors) and stripping revision markup like `\added{}` / `\textcolor{red}{}` ([custom rules →](#custom-removal-rules---config)).
 
@@ -49,7 +49,7 @@ New to the terminal? The [step-by-step Overleaf → arXiv guide](https://github.
 
 On a real statistics paper ([arXiv:2504.11630](https://arxiv.org/abs/2504.11630)): **934 → 40 files, 80.6 MB → 3.1 MB**.
 
-<img src="https://raw.githubusercontent.com/YuZh98/latex2arxiv/main/docs/demo.gif" width="700" alt="latex2arxiv demo">
+<img src="https://raw.githubusercontent.com/YuZh98/latex2arxiv/main/materials/demo.gif" width="700" alt="latex2arxiv demo">
 
 | Before (Overleaf export) | After (latex2arxiv output) |
 |---|---|
@@ -75,7 +75,7 @@ On a real statistics paper ([arXiv:2504.11630](https://arxiv.org/abs/2504.11630)
 | 🚨 | **Catches submission blockers before you upload** | `[error]` for shell-escape packages that will fail on arXiv (`minted`, `pythontex`); `[warn]` for biblatex without `.bbl`, missing index files, oversized output, undefined citations, problematic filenames — [full list](#pre-flight-checks) |
 | 🗺️ | **Guides you through upload** | `--guide` extracts title, authors, abstract, page/figure/table counts and writes a step-by-step arXiv upload walkthrough |
 
-Also: `--flatten` (single-file output, [docs](https://github.com/YuZh98/latex2arxiv/blob/main/docs/flatten.md)), `--json` (CI integration, [schema](https://github.com/YuZh98/latex2arxiv/blob/main/docs/json-schema.md)), `--resize` (image downscaling), `--dry-run` (preview without writing), BibTeX normalization, `\pdfoutput=1` injection.
+Also: `--flatten` (single-file output, [docs](https://github.com/YuZh98/latex2arxiv/blob/main/materials/flatten.md)), `--json` (CI integration, [schema](https://github.com/YuZh98/latex2arxiv/blob/main/materials/json-schema.md)), `--resize` (image downscaling), `--dry-run` (preview without writing), BibTeX normalization, `\pdfoutput=1` injection.
 
 Dependency tracking respects `\input`, `\include`, `\subfile`, `\includegraphics`, `\graphicspath`, and `\bibliography`. Commented-out commands are ignored.
 
@@ -139,13 +139,13 @@ pip install "latex2arxiv[mcp]"
 ```json
 {"mcpServers": {"latex2arxiv": {"command": "latex2arxiv-mcp"}}}
 ```
-Per-editor paths: [docs/mcp.md](https://github.com/YuZh98/latex2arxiv/blob/main/docs/mcp.md).
+Per-editor paths: [docs/mcp.md](https://github.com/YuZh98/latex2arxiv/blob/main/materials/mcp.md).
 
 ### GitHub Action — CI gate
 ```yaml
 - run: pip install latex2arxiv && latex2arxiv paper.zip --dry-run
 ```
-Fails the build on `[error]` issues. Also ships as a [`pre-commit` hook](https://github.com/YuZh98/latex2arxiv/blob/main/docs/ci.md) (`latex2arxiv-dryrun`).
+Fails the build on `[error]` issues. Also ships as a [`pre-commit` hook](https://github.com/YuZh98/latex2arxiv/blob/main/materials/ci.md) (`latex2arxiv-dryrun`).
 
 ### VS Code
 [`ext install YuZh98.latex2arxiv`](https://marketplace.visualstudio.com/items?itemName=YuZh98.latex2arxiv). Status-bar action on the active `.tex` file.
@@ -198,8 +198,8 @@ latex2arxiv input [output.zip] [options]
 | `--compile` | Run `pdflatex` on the output and open the resulting PDF. |
 | `--guide` | Write a detailed arXiv upload guide (metadata + step-by-step instructions) to a text file alongside the output. |
 | `--dry-run` | Preview what would be removed/processed without writing any output. |
-| `--flatten` | Inline every `\input` / `\include` / `\subfile` into the main `.tex` for single-file output. [Details](https://github.com/YuZh98/latex2arxiv/blob/main/docs/flatten.md). |
-| `--json` | Emit a machine-readable JSON summary on stdout; route progress to stderr. [Schema](https://github.com/YuZh98/latex2arxiv/blob/main/docs/json-schema.md). |
+| `--flatten` | Inline every `\input` / `\include` / `\subfile` into the main `.tex` for single-file output. [Details](https://github.com/YuZh98/latex2arxiv/blob/main/materials/flatten.md). |
+| `--json` | Emit a machine-readable JSON summary on stdout; route progress to stderr. [Schema](https://github.com/YuZh98/latex2arxiv/blob/main/materials/json-schema.md). |
 | `--demo` | Run the built-in demo project (no input file needed). |
 | `--clean-demo` | Remove demo output files (`demo_project_arxiv*`). |
 | `--version` | Print version and exit. |
@@ -235,7 +235,7 @@ Summary: 2 errors, 7 warnings
 
 Either `[error]` line would have caused arXiv to reject the submission after upload. The exit code is non-zero on errors, so a CI step like `latex2arxiv paper.zip --dry-run` fails the build before the bad submission ever leaves the repo.
 
-See [docs/pre-flight.md](https://github.com/YuZh98/latex2arxiv/blob/main/docs/pre-flight.md) for the full list of checks and silent fixes.
+See [docs/pre-flight.md](https://github.com/YuZh98/latex2arxiv/blob/main/materials/pre-flight.md) for the full list of checks and silent fixes.
 
 ## Custom removal rules (`--config`)
 
