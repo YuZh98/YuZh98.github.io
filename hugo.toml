@@ -248,6 +248,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       weight = 2
       id = "Yu-Zheng-131"
       title = "ResearchGate"
+    [params.social.orcid]
+      weight = 3
+      id = "0009-0001-2712-5044"
+      title = "ORCID"
 
   #  Page global config
   [params.page]
