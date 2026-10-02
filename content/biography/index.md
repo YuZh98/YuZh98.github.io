@@ -26,7 +26,7 @@ Beyond statistical research, I am interested in software development and AI engi
 
   *University of Florida*
 
-* **B.S. in Mathematics and Applied Mathematics**, 2016-2020
+* **B.S. in Mathematics and Applied Mathematics** (minor in Business Administration), 2016-2020
 
   *University of Science and Technology of China*
 
