@@ -32,6 +32,10 @@ Beyond statistical research, I am interested in software development and AI engi
 
 ### Work Experience
 
+* **Postdoctoral Research Associate**, Sep 2026 - Present
+
+  *Department of Statistics, Texas A&M University*
+
 * **Quantitative Research Intern**, Jun 2024 - Aug 2024
   
   *Susquehanna International Group (SIG)*
