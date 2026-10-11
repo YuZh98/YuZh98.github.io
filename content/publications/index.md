@@ -14,6 +14,9 @@ draft = false
 
 **Yu Zheng**, Leo L. Duan, and Arkaprava Roy. Consistency of Graphical Model-based Clustering: Robust Clustering using Bayesian Spanning Forest. [arXiv:2409.19129](https://arxiv.org/abs/2409.19129). *Bernoulli*, revision submitted.
 
+### Preprints
+**Hugh Zheng**. The Order Mass Identity of Rooted Forests, with a Direct Proof of the Extended Aldous--Broder Theorem. [ResearchGate](https://www.researchgate.net/publication/415561376_The_Order_Mass_Identity_of_Rooted_Forests_with_a_Direct_Proof_of_the_Extended_Aldous--Broder_Theorem?_sg%5B0%5D=7WROsU5DA2OBB2ytOnsS0hxAf3duUdDg_xOmyl6FT6HdPFcIzJ8lCzPZb77aHLPEqcCxK64t9bWI9DudcJ8Nh-KXcmu1roQkWbEP3oQM.tXULutQD1FWS23cDQOXviVXvWLKzfv2p9N2cNFavMUbNSAA1ekvT73spmI1bJDRUxciwS4POphLyn87vQSSMOg&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQiLCJzdWJQYWdlIjoicmVzZWFyY2gifX0)
+
 ### Contributed Talks
 
 The Bayesian Young Statisticians Meeting (BAYSM 2025), virtual conference (Apr 10, 2025). [slides](https://github.com/YuZh98/YuZh98.github.io/releases/download/pdfs-v1/publications__Talks___2025_BAYSM__Clustering_Consistency_Slide.pdf)
