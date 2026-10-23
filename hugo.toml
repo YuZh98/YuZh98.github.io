@@ -81,6 +81,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/teaching/"
     title = ""
   [[menu.main]]
+    weight = 5
+    pre = ""
+    post = ""
+    identifier = "tour"
+    name = "At a glance"
+    url = "/tour/"
+    title = "A one-page tour: research, software, skills and teaching"
+  [[menu.main]]
     weight = 1
     pre = ""
     post = ""
