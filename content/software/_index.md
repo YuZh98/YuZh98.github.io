@@ -8,7 +8,7 @@ aliases = ["/projects/"]
 [[groups]]
   key = "research"
   title = "Research code"
-  blurb = "Reproducibility code, a CRAN package, and reference implementations of my research projects: Bayesian sampling, combinatorial models, and deep generative models."
+  blurb = "Reproducibility code, a CRAN package, machine-checked proofs, and reference implementations of my research projects: Bayesian sampling, combinatorial models, random spanning forests, and deep generative models."
 
 [[groups]]
   key = "writing"
