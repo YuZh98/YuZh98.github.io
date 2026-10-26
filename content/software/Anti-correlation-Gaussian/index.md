@@ -5,6 +5,7 @@ draft = false
 weight = 4
 group = "research"
 description = 'Code for the paper "Gibbs Sampling using Anti-correlation Gaussian Data Augmentation, with Applications to L1-ball-type Models".'
+aliases = ["/projects/anti-correlation-gaussian/"]
 
 +++
 

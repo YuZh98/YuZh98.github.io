@@ -5,6 +5,7 @@ draft = false
 weight = 1
 group = "writing"
 description = 'Submit to arXiv without the headache. CLI + Chrome extension + MCP server + GitHub Action + VS Code extension for cleaning a LaTeX project into an arXiv-ready zip, with pre-flight checks and an upload guide.'
+aliases = ["/projects/latex2arxiv/"]
 
 +++
 

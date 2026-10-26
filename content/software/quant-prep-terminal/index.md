@@ -2,9 +2,10 @@
 title = 'Quant Prep Terminal'
 date = 2026-06-02T12:00:00-04:00
 draft = false
-weight = 7
+weight = 8
 group = "apps"
-description = 'A single-file, offline-first study terminal for quant interviews — cheatsheets, 100+ flashcards, and an in-browser options/probability lab. No install, no account, your data stays in your browser.'
+description = 'A single-file, offline-first study terminal for quant interviews — cheatsheets, 300+ flashcards, and an in-browser options/probability lab. No install, no account, your data stays in your browser.'
+aliases = ["/projects/quant-prep-terminal/"]
 
 +++
 
@@ -29,12 +30,12 @@ Anyone preparing for a quant trading, research, or developer interview who is ti
 ## What's inside
 
 ### Cheatsheets
-Eleven domains — calculus, linear algebra, geometry, probability distributions, combinatorics, stochastic processes, regression, options, financial instruments, Python, and C++ — as bite-size cards with worked examples. A single search box covers every domain, so you can find the identity you blanked on without hunting through tabs.
+Eighteen subjects across five groups — math (calculus, linear algebra, geometry, combinatorics), probability & statistics (probability, distributions, statistics, regression, stochastic processes, time series), finance (options & vol, instruments, microstructure), programming (Python, C++, algorithms), and reasoning (brainteasers, mental math) — as bite-size cards with worked examples. A single search box covers every subject, so you can find the identity you blanked on without hunting through tabs.
 
 ![Cheatsheets](https://raw.githubusercontent.com/YuZh98/quant-prep-terminal/main/docs/02-cheatsheets.png)
 
 ### Flashcards
-100+ real interview questions. Search them, filter by topic, and shuffle so order memorization can't fool you. Flip to check yourself, then **pin** the ones that catch you out, **archive** the ones you've nailed, and mark cards **done** for the session so the remaining pile visibly shrinks.
+300+ real interview questions, 100+ of them reported from actual quant interview loops. Search them, filter by topic, and shuffle so order memorization can't fool you. Flip to check yourself, then **pin** the ones that catch you out, **archive** the ones you've nailed, and mark cards **done** for the session so the remaining pile visibly shrinks.
 
 ![Flashcards](https://raw.githubusercontent.com/YuZh98/quant-prep-terminal/main/docs/03-flashcards.png)
 

@@ -4,7 +4,8 @@ date = 2026-07-19T00:01:00-04:00
 draft = false
 weight = 3
 group = "research"
-description = 'R package implementing the MH-within-Gibbs sampler from "Statistical Modeling of Combinatorial Response Data"'
+description = 'R package on CRAN implementing the MH-within-Gibbs sampler from "Statistical Modeling of Combinatorial Response Data" (JASA, 2026).'
+aliases = ["/projects/combreg/"]
 
 +++
 

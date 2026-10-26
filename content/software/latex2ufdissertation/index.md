@@ -5,6 +5,7 @@ draft = false
 weight = 5
 group = "writing"
 description = 'A safety-net validator for UF doctoral dissertations. Produces a severity-tiered report citing the originating UF rule for each finding.'
+aliases = ["/projects/latex2ufdissertation/"]
 
 +++
 
@@ -22,7 +23,7 @@ A safety-net validator for UF doctoral dissertations using the Fall 2025+ Univer
 pip install "git+https://github.com/YuZh98/latex2ufdissertation.git@v0.5.0"
 ```
 
-Requires Python 3.10+ and (for the compile path) LuaLaTeX with TeX Live 2025.
+Requires Python 3.10+. The default validation is pure Python and needs no LaTeX install; the optional `--compile` step also requires LuaLaTeX with TeX Live 2025.
 
 ## Quickstart
 
@@ -31,11 +32,11 @@ Requires Python 3.10+ and (for the compile path) LuaLaTeX with TeX Live 2025.
 latex2ufdissertation --init my-thesis/
 cd my-thesis/
 
-# Validate + compile
+# Validate the LaTeX source (default; no TeX installation needed)
 latex2ufdissertation .
 
-# Validate only (no TeX installation needed)
-latex2ufdissertation --dry-run .
+# Also compile with LuaLaTeX and run the PDF-layer checks
+latex2ufdissertation --compile .
 ```
 
 ## Inputs
@@ -58,9 +59,10 @@ Every finding carries a `UF-*` rule ID and a link back to the rule's catalog ent
 
 | Flag | What it does |
 |---|---|
-| (no flag) | Validate + compile → emit PDF |
+| (no flag) | Validate the LaTeX source and print the report |
+| `--compile` | Also compile with LuaLaTeX and run the PDF-layer checks |
 | `--init DIR` | Scaffold a new project |
+| `--main FILE` | Override master `.tex` auto-detection |
 | `--demo` | Print location of the bundled demo dissertation |
-| `--dry-run` | Validate only, skip compile |
 | `--json` | Machine-readable summary on stdout |
 | `--version` | Print version and exit |

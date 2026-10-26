@@ -5,6 +5,7 @@ draft = false
 weight = 5
 group = "research"
 description = 'A PyTorch reference implementation plus an 18-lesson tutorial series for modelling temporal fMRI data with deep variational autoencoders.'
+aliases = ["/projects/vae-fmri-alzheimer/"]
 
 +++
 

@@ -422,7 +422,7 @@ a.card:hover .plus { transform: scale(1.1); background: color-mix(in srgb, var(-
       <div class="card lift">
         <div class="art" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><g fill="currentColor" stroke="none" opacity="0.35"><circle cx="8" cy="8" r="1.6"/><circle cx="24" cy="8" r="1.6"/><circle cx="40" cy="8" r="1.6"/><circle cx="56" cy="8" r="1.6"/><circle cx="8" cy="24" r="1.6"/><circle cx="24" cy="24" r="1.6"/><circle cx="40" cy="24" r="1.6"/><circle cx="56" cy="24" r="1.6"/><circle cx="8" cy="40" r="1.6"/><circle cx="24" cy="40" r="1.6"/><circle cx="40" cy="40" r="1.6"/><circle cx="56" cy="40" r="1.6"/><circle cx="8" cy="56" r="1.6"/><circle cx="24" cy="56" r="1.6"/><circle cx="40" cy="56" r="1.6"/><circle cx="56" cy="56" r="1.6"/></g><path d="M24 24 H8 V8 H24 M8 24 V56 M8 40 H24 M24 56 H40 V24 H56 V8 H40 M40 40 H56 V56 M24 24 H40"/><circle cx="24" cy="24" r="4.5" fill="currentColor" stroke="none"/></svg></div>
         <p class="eyebrow">Preprint · 2026</p><h3>Extended <span class="nw">Aldous–Broder</span> theorem</h3><p>A direct proof, machine-checked in Lean 4.</p>
-        <div class="links"><a href="https://www.researchgate.net/publication/415561376_The_Order_Mass_Identity_of_Rooted_Forests_with_a_Direct_Proof_of_the_Extended_Aldous--Broder_Theorem" target="_blank" rel="noopener">Manuscript</a><a href="https://github.com/YuZh98/aldous-broder-lean" target="_blank" rel="noopener">Lean proofs</a></div>
+        <div class="links"><a href="https://arxiv.org/abs/2610.13063" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/YuZh98/aldous-broder-lean" target="_blank" rel="noopener">Lean proofs</a></div>
       </div>
     </div>
   </div>
@@ -496,7 +496,7 @@ a.card:hover .plus { transform: scale(1.1); background: color-mix(in srgb, var(-
       <a class="more" href="https://orcid.org/0009-0001-2712-5044" target="_blank" rel="noopener">ORCID</a>
       <a class="more" href="https://yuzh98.github.io/publications/" target="_blank" rel="noopener">Publications</a>
     </div>
-    <p class="foot">Hand-written HTML, no trackers. Publishes as Yu Zheng before 2026.</p>
+    <p class="foot">Hand-written HTML, no trackers. Publishes as Yu Zheng before October 2026.</p>
   </div>
 </section>
 
@@ -658,7 +658,7 @@ a.card:hover .plus { transform: scale(1.1); background: color-mix(in srgb, var(-
     jasa: ['JASA 2026', 'Statistical modeling of combinatorial response data', 'https://doi.org/10.1080/01621459.2026.2714575'],
     jcgs: ['JCGS 2025', 'Gibbs sampling with anti-correlation Gaussian augmentation', 'https://doi.org/10.1080/10618600.2025.2473932'],
     bern: ['Bernoulli (revision)', 'Consistency of Bayesian spanning-forest clustering', 'https://arxiv.org/abs/2409.19129'],
-    ab: ['Preprint 2026', 'The order-mass identity and the extended Aldous–Broder theorem', 'https://www.researchgate.net/publication/415561376_The_Order_Mass_Identity_of_Rooted_Forests_with_a_Direct_Proof_of_the_Extended_Aldous--Broder_Theorem'],
+    ab: ['Preprint 2026', 'The order-mass identity and the extended Aldous–Broder theorem', 'https://arxiv.org/abs/2610.13063'],
   };
   const R = (name, what) => [name, what, GH + name];
   const CATS = [['stats', 'Statistics'], ['ml', 'Machine learning'], ['math', 'Math & proof'], ['lang', 'Languages'], ['eng', 'Engineering']];
@@ -674,7 +674,7 @@ a.card:hover .plus { transform: scale(1.1); background: color-mix(in srgb, var(-
     ['ml', 'Deep generative models', [R('VAE-fMRI-Alzheimer', 'Recurrent 3D-conv VAE for fMRI, with an 18-lesson tutorial')]],
     ['ml', 'PyTorch', [R('VAE-fMRI-Alzheimer', 'Model, training and tests'), R('finetune-gsm8k', '4-bit quantized training')]],
     ['ml', 'JAX and NumPyro', [R('combinatorial-regression', 'Probabilistic-programming baselines')]],
-    ['ml', 'Retrieval and evals', [R('paper-rag', 'Hybrid retrieval over a math-paper corpus, in progress')]],
+    ['ml', 'Retrieval and evals', [R('paper-rag', 'Corpus manifest and 25-item golden QA set (milestone M0)')]],
     ['ml', 'GPU and HPC', [R('VAE-fMRI-Alzheimer', 'CUDA training on the HiPerGator cluster'), R('finetune-gsm8k', 'QLoRA runs on A100 and T4 GPUs')]],
     ['math', 'Formal proofs in Lean 4', [R('aldous-broder-lean', 'mathlib, no unfinished proofs, checked in CI')]],
     ['math', 'Markov chains and random trees', [P.ab, R('aldous-broder-numerics', 'Exact forest laws and simulation checks')]],
@@ -684,7 +684,7 @@ a.card:hover .plus { transform: scale(1.1); background: color-mix(in srgb, var(-
     ['lang', 'Python', [R('latex2arxiv', 'PyPI package, CLI and MCP server'), R('academic-application-tracker', 'Streamlit app'), R('finetune-gsm8k', 'Training and evaluation harness')]],
     ['lang', 'R and Rcpp', [R('combreg', 'RcppArmadillo, R CMD check in CI'), R('combinatorial-regression', 'R + Rcpp inner loops'), R('Anti-correlation-Gaussian', 'Gibbs samplers in R')]],
     ['lang', 'C++', [R('combreg', 'OpenMP-parallel hit-and-run core'), R('combinatorial-regression', 'Rcpp kernels')]],
-    ['lang', 'Rust', [R('notebuilder', 'Tauri desktop shell'), R('latex2arxiv', 'Zed editor extension')]],
+    ['lang', 'Rust', [R('notebuilder', 'Tauri desktop shell')]],
     ['lang', 'TypeScript and Svelte', [R('notebuilder', 'Desktop app, Svelte 5'), R('latex2arxiv', 'VS Code extension')]],
     ['lang', 'JavaScript', [R('latex2arxiv', 'Chrome extension for Overleaf, Python via Pyodide'), R('quant-prep-terminal', 'Single-file app with a Black–Scholes lab')]],
     ['lang', 'Lean 4', [R('aldous-broder-lean', 'Formalized theorems on mathlib')]],

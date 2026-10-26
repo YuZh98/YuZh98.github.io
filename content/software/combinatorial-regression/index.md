@@ -4,7 +4,8 @@ date = 2026-05-20T12:00:00-04:00
 draft = false
 weight = 2
 group = "research"
-description = 'Reproducibility code for "Statistical Modeling for Combinatorial Response Data", including MH-within-Gibbs sampler, pseudo-marginal MH sampler, and HMC-NUTS sampler for Bayesian regression for responses that are integer-valued vectors subject to pre-determined constraints.'
+description = 'Reproducibility code for "Statistical Modeling of Combinatorial Response Data", including MH-within-Gibbs sampler, pseudo-marginal MH sampler, and HMC-NUTS sampler for Bayesian regression for responses that are integer-valued vectors subject to pre-determined constraints.'
+aliases = ["/projects/combinatorial-regression/"]
 
 +++
 
@@ -12,7 +13,7 @@ description = 'Reproducibility code for "Statistical Modeling for Combinatorial 
 
 [![License](https://img.shields.io/github/license/YuZh98/combinatorial-regression)](https://github.com/YuZh98/combinatorial-regression/blob/main/LICENSE)
 
-Reproducibility code for the paper *Statistical Modeling for Combinatorial Response Data*. Includes the MH-within-Gibbs sampler, kernel comparison experiments, and waterfowl matching data analysis.
+Reproducibility code for the paper *Statistical Modeling of Combinatorial Response Data*. Includes the MH-within-Gibbs sampler, kernel comparison experiments, and waterfowl matching data analysis.
 
 ---
 
