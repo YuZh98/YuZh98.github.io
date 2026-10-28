@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect x="1" y="1" width="798" height="328" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <rect x="20" y="20" width="760" height="226" rx="12" fill="#E8EDF4" stroke="#1F3A5F" stroke-width="2.2"/>
+  <text x="36" y="44" font-size="16" font-weight="700" fill="#1F3A5F">One node (one computer)</text>
+  <text x="764" y="44" text-anchor="end" font-size="12.5" fill="#1F3A5F">RAM and local disk are shared by both sockets</text>
+
+  <!-- socket 1 -->
+  <rect x="40" y="60" width="350" height="168" rx="10" fill="#F0FAF8" stroke="#0F766E" stroke-width="2"/>
+  <text x="56" y="82" font-size="13.5" font-weight="700" fill="#0F766E">Socket 1 — one chip, 64 cores</text>
+  <!-- socket 2 -->
+  <rect x="410" y="60" width="350" height="168" rx="10" fill="#F0FAF8" stroke="#0F766E" stroke-width="2"/>
+  <text x="426" y="82" font-size="13.5" font-weight="700" fill="#0F766E">Socket 2 — one chip, 64 cores</text>
+
+  <defs>
+    <g id="core" font-size="11" text-anchor="middle" fill="#B45309">
+      <rect x="0" y="0" width="40" height="92" rx="6" fill="#FEF3E2" stroke="#B45309" stroke-width="1.6"/>
+      <rect x="6" y="8" width="28" height="34" rx="4" fill="#FCD9A8"/>
+      <rect x="6" y="50" width="28" height="34" rx="4" fill="#FCD9A8"/>
+      <text x="20" y="30" font-weight="700">T</text>
+      <text x="20" y="72" font-weight="700">T</text>
+    </g>
+  </defs>
+  <g transform="translate(58,108)"><use href="#core"/></g>
+  <g transform="translate(106,108)"><use href="#core"/></g>
+  <g transform="translate(154,108)"><use href="#core"/></g>
+  <g transform="translate(202,108)"><use href="#core"/></g>
+  <g transform="translate(250,108)"><use href="#core"/></g>
+  <text x="336" y="160" font-size="22" fill="#B45309" text-anchor="middle">…</text>
+  <g transform="translate(428,108)"><use href="#core"/></g>
+  <g transform="translate(476,108)"><use href="#core"/></g>
+  <g transform="translate(524,108)"><use href="#core"/></g>
+  <g transform="translate(572,108)"><use href="#core"/></g>
+  <g transform="translate(620,108)"><use href="#core"/></g>
+  <text x="706" y="160" font-size="22" fill="#B45309" text-anchor="middle">…</text>
+
+  <!-- legend -->
+  <rect x="40" y="262" width="40" height="40" rx="6" fill="#FEF3E2" stroke="#B45309" stroke-width="1.6"/>
+  <rect x="46" y="268" width="28" height="12" rx="3" fill="#FCD9A8"/>
+  <rect x="46" y="284" width="28" height="12" rx="3" fill="#FCD9A8"/>
+  <text x="92" y="279" font-size="13.5" fill="#374151"><tspan font-weight="700" fill="#B45309">core</tspan> = an independent processing unit;</text>
+  <text x="92" y="297" font-size="13.5" fill="#374151">each runs 2 <tspan font-weight="700" fill="#B45309">hardware threads (T)</tspan> that share its multipliers</text>
+  <text x="764" y="279" text-anchor="end" font-size="14" font-weight="700" fill="#1F3A5F">2 sockets × 64 cores × 2 threads</text>
+  <text x="764" y="299" text-anchor="end" font-size="14" font-weight="700" fill="#1F3A5F">= 256 "CPUs" to Linux and Slurm</text>
+</svg>

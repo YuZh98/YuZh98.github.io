@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect x="1" y="1" width="798" height="338" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <!-- shared panel -->
+  <rect x="16" y="16" width="582" height="308" rx="12" fill="#FFFBF5" stroke="#B45309" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="32" y="42" font-size="14.5" font-weight="700" fill="#B45309">Shared over the network (NFS): identical on every node</text>
+
+  <!-- local panel -->
+  <rect x="612" y="16" width="172" height="308" rx="12" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="698" y="42" text-anchor="middle" font-size="14.5" font-weight="700" fill="#B91C1C">Local to one node</text>
+
+  <!-- HOME -->
+  <rect x="32" y="58" width="178" height="250" rx="10" fill="#ECFDF3" stroke="#15803D" stroke-width="2"/>
+  <text x="121" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#15803D">HOME</text>
+  <text x="121" y="106" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#15803D">/home/netid</text>
+  <g font-size="12.5" fill="#374151">
+    <text x="46" y="138"><tspan font-weight="700">Size</tspan>  tens of GB</text>
+    <text x="46" y="160"><tspan font-weight="700">Backup</tspan>  yes, snapshots</text>
+    <text x="46" y="190" font-weight="700" fill="#15803D">Put here</text>
+    <text x="46" y="210">• scripts, configs</text>
+    <text x="46" y="230">• installed R packages</text>
+    <text x="46" y="250">• small final results</text>
+  </g>
+  <text x="121" y="292" text-anchor="middle" font-size="12" font-style="italic" fill="#15803D">small and safe</text>
+
+  <!-- SCRATCH -->
+  <rect x="222" y="58" width="178" height="250" rx="10" fill="#FEF3E2" stroke="#B45309" stroke-width="2"/>
+  <text x="311" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#B45309">SCRATCH</text>
+  <text x="311" y="106" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#B45309">/scratch/netid</text>
+  <g font-size="12.5" fill="#374151">
+    <text x="236" y="138"><tspan font-weight="700">Size</tspan>  hundreds of GB+</text>
+    <text x="236" y="160"><tspan font-weight="700">Backup</tspan>  none</text>
+    <text x="236" y="190" font-weight="700" fill="#B45309">Put here</text>
+    <text x="236" y="210">• MCMC draws</text>
+    <text x="236" y="230">• simulation replicates</text>
+    <text x="236" y="250">• anything regenerable</text>
+  </g>
+  <text x="311" y="292" text-anchor="middle" font-size="12" font-style="italic" fill="#B45309">big and unprotected</text>
+
+  <!-- PROJECT -->
+  <rect x="412" y="58" width="174" height="250" rx="10" fill="#EFF4FF" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="499" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#1D4ED8">PROJECT</text>
+  <text x="499" y="106" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#1D4ED8">/data/project</text>
+  <g font-size="12.5" fill="#374151">
+    <text x="426" y="138"><tspan font-weight="700">Size</tspan>  per project</text>
+    <text x="426" y="160"><tspan font-weight="700">Backup</tspan>  varies</text>
+    <text x="426" y="190" font-weight="700" fill="#1D4ED8">Put here</text>
+    <text x="426" y="210">• shared datasets</text>
+    <text x="426" y="230">• read in place,</text>
+    <text x="426" y="250">  don't copy</text>
+  </g>
+  <text x="499" y="292" text-anchor="middle" font-size="12" font-style="italic" fill="#1D4ED8">shared with your group</text>
+
+  <!-- TMP -->
+  <rect x="626" y="58" width="144" height="250" rx="10" fill="#FEE2E2" stroke="#B91C1C" stroke-width="2"/>
+  <text x="698" y="86" text-anchor="middle" font-size="16" font-weight="700" fill="#B91C1C">TMPDIR</text>
+  <text x="698" y="106" text-anchor="middle" font-size="12" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#B91C1C">/tmp (NVMe)</text>
+  <g font-size="12.5" fill="#374151">
+    <text x="638" y="138"><tspan font-weight="700">Speed</tspan>  fastest</text>
+    <text x="638" y="160"><tspan font-weight="700">Life</tspan>  wiped at</text>
+    <text x="638" y="176">job end</text>
+    <text x="638" y="206" font-weight="700" fill="#B91C1C">Put here</text>
+    <text x="638" y="226">• heavy temporary</text>
+    <text x="638" y="246">  I/O inside a job</text>
+  </g>
+  <text x="698" y="292" text-anchor="middle" font-size="12" font-style="italic" fill="#B91C1C">copy results out!</text>
+</svg>

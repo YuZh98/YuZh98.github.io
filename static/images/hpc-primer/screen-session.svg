@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 290" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/>
+    </marker>
+    <marker id="n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F3A5F"/>
+    </marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0F766E"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="798" height="288" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <!-- row labels -->
+  <text x="24" y="34" font-size="14" font-weight="700" fill="#B91C1C">Without screen</text>
+  <text x="24" y="164" font-size="14" font-weight="700" fill="#15803D">With screen</text>
+
+  <!-- ===== row 1 ===== -->
+  <rect x="24" y="56" width="100" height="44" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="74" y="83" text-anchor="middle" font-size="14" fill="#374151">laptop</text>
+  <line x1="124" y1="78" x2="246" y2="78" stroke="#6B7280" stroke-width="2.2" marker-end="url(#g)"/>
+  <text x="185" y="70" text-anchor="middle" font-size="12" fill="#6B7280">ssh</text>
+  <text x="185" y="98" text-anchor="middle" font-size="12" fill="#B91C1C">✂ connection drops</text>
+
+  <rect x="252" y="40" width="270" height="76" rx="10" fill="#E8EDF4" stroke="#1F3A5F" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="264" y="58" font-size="12" font-weight="700" fill="#1F3A5F">login node</text>
+  <rect x="380" y="62" width="96" height="36" rx="7" fill="#FEE2E2" stroke="#B91C1C" stroke-width="2"/>
+  <text x="428" y="85" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#B91C1C">srun</text>
+  <text x="428" y="112" text-anchor="middle" font-size="11.5" fill="#B91C1C">killed with ssh</text>
+
+  <line x1="522" y1="80" x2="590" y2="80" stroke="#9CA3AF" stroke-width="2.2" stroke-dasharray="4 4"/>
+  <rect x="596" y="40" width="180" height="76" rx="10" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="608" y="58" font-size="12" font-weight="700" fill="#6B7280">compute node</text>
+  <text x="686" y="86" text-anchor="middle" font-size="14" fill="#6B7280">bash → R</text>
+  <text x="686" y="106" text-anchor="middle" font-size="12" font-weight="700" fill="#B91C1C">job ends, work lost</text>
+
+  <line x1="24" y1="140" x2="776" y2="140" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- ===== row 2 ===== -->
+  <rect x="24" y="186" width="100" height="44" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="74" y="213" text-anchor="middle" font-size="14" fill="#374151">laptop</text>
+  <line x1="124" y1="208" x2="246" y2="208" stroke="#6B7280" stroke-width="2.2" marker-end="url(#g)"/>
+  <text x="185" y="200" text-anchor="middle" font-size="12" fill="#6B7280">ssh</text>
+  <text x="185" y="228" text-anchor="middle" font-size="12" fill="#B91C1C">✂ connection drops</text>
+
+  <rect x="252" y="170" width="270" height="76" rx="10" fill="#E8EDF4" stroke="#1F3A5F" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="264" y="188" font-size="12" font-weight="700" fill="#1F3A5F">login node</text>
+  <rect x="268" y="192" width="96" height="36" rx="7" fill="#DCFCE7" stroke="#15803D" stroke-width="2"/>
+  <text x="316" y="215" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#15803D">screen</text>
+  <line x1="364" y1="210" x2="374" y2="210" stroke="#1F3A5F" stroke-width="2" marker-end="url(#n)"/>
+  <rect x="380" y="192" width="96" height="36" rx="7" fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2"/>
+  <text x="428" y="215" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#1F3A5F">srun</text>
+  <text x="372" y="242" text-anchor="middle" font-size="11.5" fill="#15803D">keeps running after the drop</text>
+
+  <line x1="522" y1="210" x2="590" y2="210" stroke="#0F766E" stroke-width="2.6" marker-end="url(#t)"/>
+  <rect x="596" y="170" width="180" height="76" rx="10" fill="#F0FAF8" stroke="#0F766E" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="608" y="188" font-size="12" font-weight="700" fill="#0F766E">compute node</text>
+  <text x="686" y="216" text-anchor="middle" font-size="14" fill="#0F766E">bash → R</text>
+  <text x="686" y="236" text-anchor="middle" font-size="12" font-weight="700" fill="#15803D">job survives</text>
+
+  <text x="400" y="275" text-anchor="middle" font-size="13" fill="#374151">Reconnect later and run <tspan font-family="ui-monospace, Menlo, Consolas, monospace" font-weight="700">screen -r</tspan> to pick up exactly where you were.</text>
+</svg>

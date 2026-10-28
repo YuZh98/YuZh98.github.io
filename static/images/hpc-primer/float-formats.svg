@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect x="1" y="1" width="798" height="328" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="24" y="34" font-size="15" font-weight="700" fill="#1F3A5F">One number, bit by bit (block width proportional to bits)</text>
+  <text x="776" y="34" text-anchor="end" font-size="12.5" font-weight="700" fill="#374151">precision</text>
+
+  <g font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">
+    <!-- FP64: 1 / 11 / 52, 8px per bit -->
+    <text x="24" y="76" text-anchor="start" font-size="14" fill="#1F3A5F">FP64</text>
+    <rect x="96" y="58" width="8" height="28" fill="#B91C1C"/>
+    <rect x="104" y="58" width="88" height="28" fill="#1D4ED8"/>
+    <text x="148" y="77">exponent 11</text>
+    <rect x="192" y="58" width="416" height="28" fill="#15803D"/>
+    <text x="400" y="77">mantissa 52</text>
+    <text x="776" y="77" text-anchor="end" font-weight="400" fill="#374151">≈ 16 digits</text>
+
+    <!-- FP32: 1 / 8 / 23 -->
+    <text x="24" y="122" text-anchor="start" font-size="14" fill="#1F3A5F">FP32</text>
+    <rect x="96" y="104" width="8" height="28" fill="#B91C1C"/>
+    <rect x="104" y="104" width="64" height="28" fill="#1D4ED8"/>
+    <text x="136" y="123">exp 8</text>
+    <rect x="168" y="104" width="184" height="28" fill="#15803D"/>
+    <text x="260" y="123">mantissa 23</text>
+    <text x="776" y="123" text-anchor="end" font-weight="400" fill="#374151">≈ 7 digits</text>
+
+    <!-- FP16: 1 / 5 / 10 -->
+    <text x="24" y="168" text-anchor="start" font-size="14" fill="#1F3A5F">FP16</text>
+    <rect x="96" y="150" width="8" height="28" fill="#B91C1C"/>
+    <rect x="104" y="150" width="40" height="28" fill="#1D4ED8"/>
+    <text x="124" y="169">5</text>
+    <rect x="144" y="150" width="80" height="28" fill="#15803D"/>
+    <text x="184" y="169">10</text>
+    <text x="776" y="169" text-anchor="end" font-weight="400" fill="#374151">≈ 3 digits · max 65,504</text>
+
+    <!-- BF16: 1 / 8 / 7 -->
+    <text x="24" y="214" text-anchor="start" font-size="14" fill="#1F3A5F">BF16</text>
+    <rect x="96" y="196" width="8" height="28" fill="#B91C1C"/>
+    <rect x="104" y="196" width="64" height="28" fill="#1D4ED8"/>
+    <text x="136" y="215">8</text>
+    <rect x="168" y="196" width="56" height="28" fill="#15803D"/>
+    <text x="196" y="215">7</text>
+    <text x="776" y="215" text-anchor="end" font-weight="400" fill="#374151">≈ 2 digits · FP32's range</text>
+
+    <!-- FP8 E4M3: 1 / 4 / 3 -->
+    <text x="24" y="260" text-anchor="start" font-size="14" fill="#1F3A5F">FP8</text>
+    <rect x="96" y="242" width="8" height="28" fill="#B91C1C"/>
+    <rect x="104" y="242" width="32" height="28" fill="#1D4ED8"/>
+    <text x="120" y="261">4</text>
+    <rect x="136" y="242" width="24" height="28" fill="#15803D"/>
+    <text x="148" y="261">3</text>
+    <text x="776" y="261" text-anchor="end" font-weight="400" fill="#374151">≈ 1 digit · max 448</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="13" fill="#374151">
+    <rect x="96" y="290" width="14" height="14" fill="#B91C1C"/><text x="116" y="302">sign</text>
+    <rect x="170" y="290" width="14" height="14" fill="#1D4ED8"/><text x="190" y="302">exponent → range (how big / small)</text>
+    <rect x="430" y="290" width="14" height="14" fill="#15803D"/><text x="450" y="302">mantissa → precision (how many digits)</text>
+  </g>
+</svg>

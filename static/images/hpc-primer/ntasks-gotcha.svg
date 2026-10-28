@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/>
+    </marker>
+    <g id="core2">
+      <rect x="0" y="0" width="46" height="70" rx="6" fill="#FEF3E2" stroke="#B45309" stroke-width="1.6"/>
+      <rect x="7" y="7" width="32" height="25" rx="4" fill="#FCD9A8"/>
+      <rect x="7" y="38" width="32" height="25" rx="4" fill="#FCD9A8"/>
+      <text x="23" y="25" text-anchor="middle" font-size="11" font-weight="700" fill="#B45309">CPU</text>
+      <text x="23" y="56" text-anchor="middle" font-size="11" font-weight="700" fill="#B45309">CPU</text>
+    </g>
+  </defs>
+  <rect x="1" y="1" width="798" height="298" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <g font-size="13.5" font-weight="700" fill="#6B7280">
+    <text x="24" y="34">You ask for</text>
+    <text x="330" y="34">Slurm allocates (whole cores)</text>
+    <text x="560" y="34">What runs</text>
+  </g>
+
+  <!-- row 1: no ntasks -->
+  <rect x="24" y="64" width="270" height="56" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="38" y="88" font-size="13" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#111827">--cpus-per-task=1</text>
+  <text x="38" y="108" font-size="12.5" fill="#B91C1C">(no --ntasks)</text>
+  <line x1="294" y1="92" x2="346" y2="92" stroke="#6B7280" stroke-width="2" marker-end="url(#a)"/>
+  <g transform="translate(352,56)"><use href="#core2"/></g>
+  <text x="410" y="86" font-size="12.5" fill="#374151">1 core</text>
+  <text x="410" y="104" font-size="12.5" fill="#374151">= 2 CPUs</text>
+  <line x1="480" y1="92" x2="552" y2="92" stroke="#6B7280" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="560" y="60" width="104" height="28" rx="6" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="612" y="79" text-anchor="middle" font-size="12.5" fill="#B91C1C">Rscript (task 0)</text>
+  <rect x="560" y="96" width="104" height="28" rx="6" fill="#FEE2E2" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="612" y="115" text-anchor="middle" font-size="12.5" fill="#B91C1C">Rscript (task 1)</text>
+  <text x="676" y="88" font-size="13" font-weight="700" fill="#B91C1C">✗ runs twice</text>
+  <text x="676" y="106" font-size="11.5" fill="#B91C1C">same output file,</text>
+  <text x="676" y="121" font-size="11.5" fill="#B91C1C">duplicated work</text>
+
+  <!-- row 2: ntasks=1 -->
+  <rect x="24" y="168" width="270" height="56" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="38" y="192" font-size="13" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#111827">--cpus-per-task=1</text>
+  <text x="38" y="212" font-size="13" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#15803D">--ntasks=1</text>
+  <line x1="294" y1="196" x2="346" y2="196" stroke="#6B7280" stroke-width="2" marker-end="url(#a)"/>
+  <g transform="translate(352,160)"><use href="#core2"/></g>
+  <text x="410" y="190" font-size="12.5" fill="#374151">1 core</text>
+  <text x="410" y="208" font-size="12.5" fill="#374151">= 2 CPUs</text>
+  <line x1="480" y1="196" x2="552" y2="196" stroke="#6B7280" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="560" y="182" width="104" height="28" rx="6" fill="#DCFCE7" stroke="#15803D" stroke-width="1.5"/>
+  <text x="612" y="201" text-anchor="middle" font-size="12.5" fill="#15803D">Rscript (task 0)</text>
+  <text x="676" y="192" font-size="13" font-weight="700" fill="#15803D">✓ runs once</text>
+  <text x="676" y="210" font-size="11.5" fill="#15803D">using both CPUs</text>
+
+  <text x="400" y="272" text-anchor="middle" font-size="13" fill="#374151">With 2 threads per core and whole-core allocation, a request for 1 CPU becomes 2;</text>
+  <text x="400" y="290" text-anchor="middle" font-size="13" fill="#374151">without <tspan font-family="ui-monospace, Menlo, Consolas, monospace">--ntasks</tspan>, <tspan font-family="ui-monospace, Menlo, Consolas, monospace">srun</tspan> may start one copy per allocated CPU.</text>
+</svg>
