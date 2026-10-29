@@ -17,10 +17,8 @@ Beyond statistical research, I am interested in software development and AI engi
 * Model-based clustering
 * Markov chain Monte Carlo (MCMC)
 * Combinatorial and structured data
-* Graphical models
+* Random graphs
 * Variable selection
-* Random spanning trees and forests
-* Formal verification (Lean 4)
 
 ### Education
 

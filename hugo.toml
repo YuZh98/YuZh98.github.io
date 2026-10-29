@@ -57,7 +57,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
-    weight = 2
+    weight = 3
     identifier = "publications"
     pre = ""
     post = ""
@@ -65,7 +65,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/publications/"
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 4
     identifier = "software"
     pre = ""
     post = ""
@@ -73,7 +73,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/software/"
     title = ""
   [[menu.main]]
-    weight = 4
+    weight = 5
     pre = ""
     post = ""
     identifier = "teaching"
@@ -81,11 +81,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/teaching/"
     title = ""
   [[menu.main]]
-    weight = 5
+    weight = 2
     pre = ""
     post = ""
     identifier = "tour"
-    name = "At a glance"
+    name = "Overview"
     url = "/tour/"
     title = "A one-page tour: research, software, skills and teaching"
   [[menu.main]]
@@ -564,6 +564,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
+
+# Comments are for posts only
+[[cascade]]
+  [cascade.params]
+    comment = false
+  [cascade.target]
+    path = "{/biography,/biography/**,/publications,/publications/**,/software,/software/**,/teaching,/teaching/**}"
 
 # Sitemap config
 [sitemap]

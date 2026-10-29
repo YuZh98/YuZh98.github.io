@@ -18,7 +18,7 @@ aliases = ["/projects/"]
 [[groups]]
   key = "apps"
   title = "Apps & tools"
-  blurb = "Standalone apps: a desktop app for interactive study notebooks, an academic-application tracker, and an offline quant-interview study terminal."
+  blurb = "Standalone apps: a desktop app for interactive study notebooks and an academic-application tracker."
 +++
 
 Open-source tools I build and maintain, grouped by what they do. Each entry links to its GitHub repo and a full write-up.

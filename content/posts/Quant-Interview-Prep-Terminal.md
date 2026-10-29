@@ -2,10 +2,8 @@
 title = 'Quant Prep Terminal'
 date = 2026-06-02T12:00:00-04:00
 draft = false
-weight = 8
-group = "apps"
 description = 'A single-file, offline-first study terminal for quant interviews — cheatsheets, 300+ flashcards, and an in-browser options/probability lab. No install, no account, your data stays in your browser.'
-aliases = ["/projects/quant-prep-terminal/"]
+aliases = ["/projects/quant-prep-terminal/", "/software/quant-prep-terminal/"]
 
 +++
 
