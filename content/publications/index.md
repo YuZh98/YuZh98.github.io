@@ -14,8 +14,7 @@ draft = false
 
 **Yu Zheng**, Leo L. Duan, and Arkaprava Roy. Consistency of Graphical Model-based Clustering: Robust Clustering using Bayesian Spanning Forest. [arXiv:2409.19129](https://arxiv.org/abs/2409.19129). *Bernoulli*, revision submitted (2nd round).
 
-### Preprints
-**Hugh Zheng**. (2026). The Order Mass Identity of Rooted Forests, with a Direct Proof of the Extended Aldous--Broder Theorem. [arXiv:2610.13063](https://arxiv.org/abs/2610.13063). Lean 4 formalization: [aldous-broder-lean](https://github.com/YuZh98/aldous-broder-lean).
+**Hugh Zheng**. The Order Mass Identity of Rooted Forests, with a Direct Proof of the Extended Aldous--Broder Theorem. [arXiv:2610.13063](https://arxiv.org/abs/2610.13063). *SIAM Journal on Mathematics of Data Science*, submitted. Lean 4 formalization: [aldous-broder-lean](https://github.com/YuZh98/aldous-broder-lean).
 
 ### Contributed Talks
 
