@@ -332,21 +332,21 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = true
-      Linkedin = false
+      Facebook = false
+      Linkedin = true
       Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = true
-      Reddit = false
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Blogger = false
       Baidu = false
       Odnoklassniki = false
@@ -356,7 +356,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Mix = false
     #  Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config
       [params.page.comment.disqus]
         # 
@@ -426,18 +426,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # giscus comment config (https://giscus.app/)
       [params.page.comment.giscus]
         # You can refer to the official documentation of giscus to use the following configuration.
-        enable = false
-        repo = ""
-        repoId = ""
+        enable = true
+        repo = "YuZh98/YuZh98.github.io"
+        repoId = "R_kgDOKjxEpQ"
         category = "Announcements"
-        categoryId = ""
+        categoryId = "DIC_kwDOKjxEpc4DJ7kc"
         # automatically adapt the current theme i18n configuration when empty
         lang = ""
         mapping = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "0"
         inputPosition = "bottom"
-        lazyLoading = false
+        lazyLoading = true
         lightTheme = "light"
         darkTheme = "dark"
     #  Third-party library config
@@ -489,7 +489,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   #  Analytics config
   [params.analytics]
-    enable = false
+    enable = true
+    # GoatCounter (cookieless; dashboard at https://yuzh98.goatcounter.com)
+    [params.analytics.goatcounter]
+      code = "yuzh98"
     # Google Analytics
     [params.analytics.google]
       id = ""
@@ -508,8 +511,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       id = ""
 
   #  Cookie consent config
-  # Disabled because the site has no analytics and sets no
-  # third-party cookies, so the banner had nothing to consent to.
+  # Disabled because the site sets no cookies (GoatCounter is
+  # cookieless), so the banner has nothing to consent to.
   [params.cookieconsent]
     enable = false
     [params.cookieconsent.content]

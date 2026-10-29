@@ -110,3 +110,22 @@
     background: rgba(96, 197, 240, 0.22);
   }
 }
+
+// --- Post footer: share + contact rows -----------------------------------
+.post-footer .post-info .post-info-line {
+  align-items: center;
+
+  &.post-info-contact {
+    justify-content: flex-end;
+  }
+
+  .post-info-label {
+    font-size: 0.8rem;
+    color: $global-font-secondary-color;
+    margin-right: 0.4rem;
+
+    [theme="dark"] & {
+      color: $global-font-secondary-color-dark;
+    }
+  }
+}

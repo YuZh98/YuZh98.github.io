@@ -1,0 +1,103 @@
+{{- $params := .Scratch.Get "params" -}}
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>
+                    {{- with .Site.Params.dateformat | default "2006-01-02" | .Lastmod.Format -}}
+                        {{- dict "Date" . | T "updatedOnDate" -}}
+                        {{- if $.Site.Params.gitRepo -}}
+                            {{- with $.GitInfo -}}
+                                &nbsp;<a class="git-hash" href="{{ printf `%v/commit/%v` $.Site.Params.gitRepo .Hash }}" target="_blank" title="commit by {{ .AuthorName }}({{ .AuthorEmail }}) {{ .Hash }}: {{ .Subject }}">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>{{- .AbbreviatedHash -}}
+                                </a>
+                            {{- end -}}
+                        {{- end -}}
+                    {{- end -}}
+                </span>
+            </div>
+            {{- with $params.license | string -}}
+            <div class="post-info-license">
+                <span>
+                    {{- . | safeHTML -}}
+                </span>
+            </div>
+            {{- end -}}
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md">
+                {{- if $params.linktomarkdown -}}
+                    {{- with .OutputFormats.Get "markdown" -}}
+                        <span>
+                            <a class="link-to-markdown" href="{{ .RelPermalink }}" target="_blank">
+                                {{- T "readMarkdown" -}}
+                            </a>
+                        </span>
+                    {{- end -}}
+                {{- end -}}
+            </div>
+            <div class="post-info-share">
+                <span class="post-info-label">Share</span>
+                <span>
+                    {{- partial "plugin/share.html" . -}}
+                    <a href="{{ printf "https://bsky.app/intent/compose?text=%s" (replace (urlquery (printf "%s %s" .Title .Permalink)) "+" "%20") | safeURL }}" title="Share on Bluesky" target="_blank" rel="noopener noreferrer">
+                        {{- dict "Simpleicons" "bluesky" | partial "plugin/icon.html" -}}
+                    </a>
+                    <a href="{{ printf "mailto:?subject=%s&body=%s" (replace (urlquery .Title) "+" "%20") (urlquery .Permalink) | safeURL }}" title="Share by email">
+                        {{- dict "Class" "far fa-paper-plane fa-fw" | partial "plugin/icon.html" -}}
+                    </a>
+                    <a href="javascript:void(0);" title="Copy link" data-copy-url="{{ .Permalink }}" onclick="navigator.clipboard.writeText(this.dataset.copyUrl).then(() => { this.title = 'Link copied'; });">
+                        {{- dict "Class" "fas fa-link fa-fw" | partial "plugin/icon.html" -}}
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="post-info-line post-info-contact">
+            <div class="post-info-share">
+                <span class="post-info-label">Get in touch</span>
+                <span>
+                    {{- partial "single/contact.html" . -}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags">
+            {{- with .Params.tags -}}
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;
+                {{- range $index, $value := . -}}
+                    {{- if gt $index 0 }},&nbsp;{{ end -}}
+                    {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
+                    <a href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
+                {{- end -}}
+            {{- end -}}
+        </section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">{{ T "back" }}</a></span>&nbsp;|&nbsp;<span><a href="{{ .Site.Home.RelPermalink }}">{{ T "home" }}</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        {{- $prevPage := false -}}
+        {{- $nextPage := false -}}
+        {{- if or (.Params.prev) (.Params.next) -}}
+            {{- with .Params.prev -}}
+                {{- $prevPage = $.Site.GetPage . -}}
+            {{- end -}}
+            {{- with .Params.next -}}
+                {{- $nextPage = $.Site.GetPage . -}}
+            {{- end -}}
+        {{- else -}}
+            {{- $prevPage = .PrevInSection -}}
+            {{- $nextPage = .NextInSection -}}
+        {{- end -}}
+        {{- with $prevPage -}}
+            <a href="{{ .RelPermalink }}" class="prev" rel="prev" title="{{ .Title }}"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>{{ .Title | emojify }}</a>
+        {{- end -}}
+        {{ with $nextPage }}
+            <a href="{{ .RelPermalink }}" class="next" rel="next" title="{{ .Title }}">{{ .Title | emojify }}<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a>
+        {{- end -}}
+    </div>
+</div>
