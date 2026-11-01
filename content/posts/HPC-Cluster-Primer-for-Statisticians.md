@@ -282,7 +282,7 @@ If your laptop aliases `grep` to `rg` (ripgrep), `grep -E` fails with `unknown e
 5. **Ctrl-`** opens a terminal — on the **login node**.
 
 {{< admonition type="warning" title="VS Code does not change where code runs" >}}
-A notebook kernel or R session started from a Remote-SSH window runs on the **login node**. Run heavy work on a compute node: a Slurm job that starts Jupyter or RStudio Server, which you then connect to.
+A notebook kernel or R session started from a Remote-SSH window runs on the **login node**. Run heavy work on a compute node: a Slurm job that starts Jupyter or RStudio Server, which you then connect to through a tunnel (below, and in section 8).
 {{< /admonition >}}
 
 ### Gotcha: the bare `bash-5.1$` prompt
@@ -312,6 +312,67 @@ EOF
 ```
 
 Open a new terminal and check that the prompt is normal and `type module` prints "module is a function".
+
+### Addresses, ports and TCP
+
+Reaching a program over a network takes two answers: which machine, and which program on it. An **IP address** answers the first and a **port number** (0–65535) the second. An IPv4 address is 32 bits written as four decimal bytes, hence the three dots and the 2³² possible values. IPv6 uses 128 bits, abbreviated: `::1` is 127 zero bits followed by a 1.
+
+| Layer | Job |
+|---|---|
+| HTTP | what the browser and Jupyter say to each other |
+| TCP | reliable stream of bytes between two programs, named by ports |
+| IP | packets between two machines, named by addresses |
+| Wi-Fi, Ethernet | bits across one physical link |
+
+IP is best effort: packets can be lost, duplicated or reordered, and nobody is told. **TCP** (Transmission Control Protocol), which runs inside the operating system, turns that into an ordered, lossless stream. It opens each connection with a handshake, numbers every byte, resends whatever isn't acknowledged, and slows down for a full receiver or a congested network. SSH, HTTP and Jupyter all use it. A connection is identified by four values — source and destination address and port — so many browser tabs can share one destination port.
+
+{{< admonition type="tip" title="What it means to listen" >}}
+A program **listens** on a port by asking the operating system for every new connection to that address and port. Only one program can hold a given pair, and the claim ends when the program exits, so "free" only ever means "free right now". Whoever opens a connection is the *client*; the listener is the *server*, and the connection is *incoming* from its side, even when both programs share a machine.
+{{< /admonition >}}
+
+The address a program claims decides who can reach it:
+
+| Address claimed | Who can connect |
+|---|---|
+| `127.0.0.1`, `::1` | loopback: programs on the same machine; traffic never leaves it. IPv4 and IPv6 are separate claims |
+| the machine's network IP | other machines that can reach that IP |
+| `0.0.0.0` | anyone who can reach the machine, on any of its addresses |
+
+And the number you pick:
+
+| Range | IANA class | Use |
+|---|---|---|
+| 0–1023 | well-known | avoid: needs root (22 ssh, 443 https) |
+| 1024–49151 | registered | good for tunnels; check it is free first |
+| 49152–65535 | dynamic | avoid: the operating system may pick from here for its own temporary connections |
+
+Registration is a label, not a reservation. macOS's `/etc/services` assigns 8888 to `ddi-tcp-1`, a news service, yet 8888 is Jupyter's default by convention and nothing stops you using it. What matters is whether something holds the port now, and `lsof` ("list open files") says, because sockets count as files:
+
+```bash
+lsof -nP -iTCP:8888 -sTCP:LISTEN     # who holds port 8888? no output: it is free
+lsof -nP -iTCP -sTCP:LISTEN          # every TCP port claimed on this machine
+```
+
+`-n` and `-P` show numbers instead of names, `-iTCP:8888` selects network sockets (TCP, port 8888), and `-sTCP:LISTEN` keeps those in the listening state. `-i` does the essential work: without it `lsof` lists every open file of every process, tens of thousands of lines, and `-s` alone barely shortens that because it filters sockets and leaves everything else in.
+
+### SSH tunnels
+
+A server on a compute node listens at, say, `c01:20115`. Your laptop talks to the login node, not to compute nodes, so the browser needs a relay. That is an SSH **tunnel**:
+
+```bash
+ssh -N -L 8889:c01:20115 netid@cluster.example.edu
+```
+
+{{< figure src="/images/hpc-primer/ssh-tunnel.svg" alt="The browser connects to ssh on the laptop at 127.0.0.1 port 8889; ssh carries the traffic encrypted to the login node, which connects to JupyterLab at c01 port 20115" caption="A tunnel is three connections in a row, each incoming to the program on its right." >}}
+
+`-N` runs no remote command, so the terminal sits silent: that is the tunnel working. `-L LOCAL:HOST:PORT` makes `ssh` listen on your laptop at `LOCAL` and pass each connection to the login node, which opens `HOST:PORT` itself; the name `c01` is resolved at that end. The two port numbers are independent. The first must be free on your laptop; the second belongs to the job. By default `ssh` listens on loopback only, so nobody else on your Wi-Fi can use the tunnel.
+
+| Message | Meaning and fix |
+|---|---|
+| `bind [127.0.0.1]:8888: Address already in use` | Your laptop refused the claim: another program holds the port, and no packet was sent. `ssh` keeps running, so it looks alive while the browser reaches the other program. Ctrl-C it, find the holder with `lsof`, use another port. |
+| `channel 2: open failed: connect failed: Connection refused` | The tunnel works and the far end rejected the handshake: nothing listens at that port. See section 8. |
+
+The two are opposites: *already in use* means somebody is there, *refused* means nobody is.
 
 ------
 
@@ -351,8 +412,11 @@ An unclosed quote leaves a `>` continuation prompt; Ctrl-C gets you out.
 | `du -sh ~/* \| sort -h` | size of each folder in home, sorted |
 | `ln -s TARGET NAME` | a shortcut (symbolic link) pointing at TARGET |
 | `type NAME` | is NAME an alias, a function, or a program? |
+| `lsof -nP -iTCP:PORT -sTCP:LISTEN` | which program holds a port? |
 
 Unix commands are silent on success. Aliases from your laptop (`eza`, `zoxide`'s `z`, …) don't exist on the cluster; plain aliases in `~/.bashrc` such as `alias cdp='cd ~/project'` cover the few places you visit.
+
+Flags share one grammar. A single dash introduces single letters, which can be bundled: `-nP` is `-n -P`. A letter can take a value with or without a space: `-iTCP:8888` is `-i TCP:8888`, flag `-i`, value `TCP:8888`. So `-TCP` does not mean TCP: `lsof` reads `-T`, a different option, and stops with an error. Two dashes introduce whole words, as in `--partition=short`. To look one up, run `man lsof` and type `/-i` to search.
 
 ------
 
@@ -449,6 +513,57 @@ Submit with `sbatch test.sh`, watch with `squeue -u $USER`, follow output with `
 Slurm does not create missing folders. If `logs/` doesn't exist, the job dies before running **and leaves no log**, so you can't see why. Run `mkdir -p logs` once in the folder you submit from.
 {{< /admonition >}}
 
+### A server inside a job: Jupyter
+
+To work in a notebook on a compute node, run the server as a batch job whose one command never finishes:
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=jupyter
+#SBATCH --partition=medium
+#SBATCH --time=04:00:00
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=16G
+#SBATCH --output=jupyter_%j.log
+module purge
+module load <your Python or JupyterLab module>
+NODE=$(hostname -s)                    # the compute node Slurm chose
+PORT=$(shuf -i 20000-60000 -n 1)       # random, so users of one node rarely collide
+TOKEN=$(openssl rand -hex 24)          # the password in the URL
+cat <<EOF
+1. Laptop terminal:  ssh -N -L 8888:${NODE}:${PORT} netid@cluster.example.edu
+2. Browser:          http://127.0.0.1:8888/lab?token=${TOKEN}
+3. When done:        File > Shut Down, Ctrl-C the tunnel, scancel ${SLURM_JOB_ID}
+EOF
+jupyter lab --no-browser --ip="$NODE" --port="$PORT" \
+  --IdentityProvider.token="$TOKEN" > "jupyter_${SLURM_JOB_ID}.server.log" 2>&1
+```
+
+`--ip="$NODE"` claims the node's network address, because the tunnel's last leg arrives from the login node; on `127.0.0.1` alone Jupyter could not be reached from there. The token guards it, since any program that reaches the port could otherwise use it.
+
+The three log lines come *before* `jupyter lab`, so they prove that the job started, not that the server is up or still alive. Check both:
+
+```bash
+squeue -u $USER                                 # the job to use: state R
+grep "is running at" jupyter_JOBID.server.log   # the server came up
+```
+
+Then paste line 1 into a laptop terminal, leave it open, and open line 2 in the browser. If 8888 is busy on your laptop, change it to 8889 in both.
+
+{{< admonition type="warning" title="A dead job's log looks like a live one" >}}
+Every job has its own port and token, and the log of a dead job goes on showing them. Take both from the log of the job `squeue` shows as running. A port that differs from the log you are reading may be the right one: you may have resubmitted, and it may belong to the newer job. Run `squeue -u $USER` before judging a port stale, and before any `scancel`.
+{{< /admonition >}}
+
+When a job has vanished, ask Slurm why:
+
+```bash
+sacct -j JOBID -X --format=JobID,Partition,State%25,ExitCode,Start,End,Elapsed
+id -u                                  # your numeric uid
+```
+
+`State` gives the reason: `CANCELLED by UID` (compare with `id -u`), `PREEMPTED`, `OUT_OF_MEMORY`, `NODE_FAIL`, `TIMEOUT` or `FAILED`. A cancelled job's log ends with `slurmstepd: error: *** JOB ... CANCELLED AT ...`; that "error" reports the cancel, not a fault. The server's own log can simply stop, with no shutdown message and no traceback, so a quiet log does not show that a job is alive.
+
 ### `screen`: keep interactive sessions alive
 
 The `srun` client for an interactive session runs **on the login node** and is the job's lifeline. If your laptop sleeps or Wi-Fi drops, the SSH connection dies, `srun` dies, and Slurm ends your job. `screen` (or `tmux`) sits upstream of `srun` on the login node and survives the drop:
@@ -503,6 +618,8 @@ RStudio Desktop on your laptop cannot use the cluster's CPUs. Whatever holds an 
 ssh mycluster
 rsync -avP ./scripts/ mycluster:~/project/scripts/      # push
 rsync -avP mycluster:~/project/results/ ./results/      # pull
+ssh -N -L 8889:NODE:PORT netid@cluster.example.edu      # tunnel to a job
+lsof -nP -iTCP:8888 -sTCP:LISTEN                        # who holds port 8888?
 
 # ── login node ──────────────────────────────────────────
 sinfo                                  # partitions and node states
@@ -512,6 +629,7 @@ sbatch job.sh                          # submit
 squeue -u $USER                        # my jobs
 scancel JOBID                          # cancel one
 sacct -j JOBID                         # what a finished job used
+sacct -j JOBID -X --format=JobID,State%25,End    # how and when it ended
 
 # ── compute node ────────────────────────────────────────
 srun --partition=short --ntasks=1 --cpus-per-task=4 --mem=8G --time=02:00:00 --pty bash -i
@@ -527,4 +645,5 @@ exit                                   # free the node
 - Scripts in home, big regenerable output in scratch, shared data read in place.
 - `module purge` at the top of batch scripts; keep `module load` lines out of `~/.bashrc`.
 - `mkdir -p logs` before your first `sbatch`.
+- A log line does not mean a live server: `squeue` first, then port and token from the running job's log.
 - Stay in FP64 for likelihoods and Cholesky factors.

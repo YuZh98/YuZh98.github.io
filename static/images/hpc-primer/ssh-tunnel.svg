@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 190" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/>
+    </marker>
+    <marker id="n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F3A5F"/>
+    </marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0F766E"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="798" height="188" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+  <!-- laptop -->
+  <rect x="24" y="30" width="320" height="110" rx="10" fill="#F9FAFB" stroke="#6B7280" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="36" y="50" font-size="12" font-weight="700" fill="#6B7280">laptop</text>
+  <rect x="40" y="66" width="96" height="48" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="88" y="95" text-anchor="middle" font-size="14" fill="#374151">browser</text>
+  <rect x="236" y="66" width="92" height="48" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="282" y="95" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#374151">ssh</text>
+  <line x1="136" y1="90" x2="230" y2="90" stroke="#6B7280" stroke-width="2.2" marker-end="url(#g)"/>
+  <text x="185" y="80" text-anchor="middle" font-size="10.5" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#6B7280">127.0.0.1:8889</text>
+
+  <!-- encrypted link -->
+  <line x1="328" y1="90" x2="420" y2="90" stroke="#1F3A5F" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#n)"/>
+  <text x="382" y="80" text-anchor="middle" font-size="12" fill="#1F3A5F">encrypted</text>
+
+  <!-- login node -->
+  <rect x="426" y="66" width="104" height="48" rx="8" fill="#E8EDF4" stroke="#1F3A5F" stroke-width="2"/>
+  <text x="478" y="95" text-anchor="middle" font-size="14" fill="#1F3A5F">login node</text>
+
+  <!-- compute node -->
+  <line x1="530" y1="90" x2="622" y2="90" stroke="#0F766E" stroke-width="2.2" marker-end="url(#t)"/>
+  <text x="570" y="80" text-anchor="middle" font-size="10.5" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#0F766E">c01:20115</text>
+  <rect x="604" y="30" width="172" height="110" rx="10" fill="#E6F2F0" stroke="#0F766E" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="616" y="50" font-size="12" font-weight="700" fill="#0F766E">compute node</text>
+  <rect x="628" y="66" width="124" height="48" rx="8" fill="#FFFFFF" stroke="#0F766E" stroke-width="2"/>
+  <text x="690" y="95" text-anchor="middle" font-size="14" fill="#0F766E">JupyterLab</text>
+
+  <text x="400" y="168" text-anchor="middle" font-size="12.5" fill="#374151">The laptop port and the job's port are independent: choose the first, read the second from the job.</text>
+</svg>
